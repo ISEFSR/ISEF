@@ -1,0 +1,1120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="data_white_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data_white_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vuc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoZdroj" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset238 Calibri;}{\f2\fnil Calibri;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22 2d. Sch\'e9ma k\'f3dovania zdrojov\par
+ zdroj\par
+xxxx\par
+ alfanumerick\'fd k\'f3d, resp. nula alebo medzera\par
+\par
+Pr\'edloha \f1\'e8. 1\par
+k Pr\f0\'edru\f1\'e8ke na zostavenie n\f0\'e1vrhu rozpo\f1\'e8tu verejnej spr\f0\'e1vy na roky 2008 a\f1\'9e 2010\par
+K\f0\'f3dy zdrojov\par
+1) v \f1\'9at\f0\'e1tnom rozpo\f1\'e8te\par
+10 \f2\endash  \f1\'8at\f0\'e1tny rozpo\f1\'e8et\par
+11 \f2\endash  Rozpo\f1\'e8et kapitoly\par
+111 \f2\endash  Rozpo\f1\'e8tov\f0\'e9 prostriedky kapitoly\par
+114 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF)\par
+1141 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF)\par
+1142 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF) \f2\endash  spolufinancovanie zo \f1\'8aR\par
+115 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja\par
+1151 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja (prostriedky E\'da)\par
+1152 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja \f2\endash  spolufinancovanie zo \f1\'8aR\par
+116 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond\par
+1161 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond (prostriedky E\'da)\par
+1162 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+117 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond\par
+1171 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  usmer\f1\'f2ovacia sekcia\par
+(prostriedky E\f0\'da)\par
+1172 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  usmer\f1\'f2ovacia sekcia \f2\endash\par
+spolufinancovanie zo \f1\'8aR\par
+118 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu\par
+1181 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu (prostriedky E\f0\'da)\par
+1182 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu \f2\endash  spolufinancovanie zo \f1\'8aR\par
+119 \f2\endash  Koh\f0\'e9zny fond\par
+1191 \f2\endash  Koh\f0\'e9zny fond (prostriedky E\'da)\par
+1192 \f2\endash  Koh\f0\'e9zny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11A Vn\f0\'fatorn\'e9 politiky\par
+11A1 Vn\'fatorn\'e9 opatrenia (prostriedky E\'da)\par
+11A2 Prechodn\'fd fond (prostriedky E\'da)\par
+11A3 Budovanie Schengensk\'fdch hran\'edc\par
+11A4 Odstavenie bloku V1 Jaslovsk\'e9 Bohunice\par
+11A5 Spolufinancovanie zo \f1\'8aR k Prechodn\f0\'e9mu fondu \f2\endash  kapitola VPS\par
+11A6 Budovanie Schengensk\f0\'fdch hran\'edc \f2\endash  spolufinancovanie z rozpo\f1\'e8tov\f0\'fdch prostriedkov\par
+kapitoly\par
+11A7 Prechodn\'fd fond \f2\endash  spolufinancovanie z rozpo\f1\'e8tov\f0\'fdch prostriedkov kapitoly\par
+11A8 Vn\'fatorn\'e9 opatrenia \f2\endash  spolufinancovanie z rozpo\f1\'e8tov\f0\'fdch prostriedkov kapitoly\par
+130 3/2007 FINAN\f1\'c8N\f0\'dd SPRAVODAJCA\par
+11B Rozpo\f1\'e8tov\f0\'e9 prostriedky kapitoly na spolufinancovanie predvstupov\'fdch fondov\par
+11B2 ISPA\par
+11C Vl\'e1dne \'favery\par
+11C1 Eur\'f3pska investi\f1\'e8n\f0\'e1 banka\par
+11C2 Rozvojov\'e1 banka Rady Eur\'f3py\par
+11C3 Svetov\'e1 banka\par
+11C4 In\'e9\par
+11C5 Vl\'e1dne \'favery \f2\endash  spolufinancovanie (k prostriedkom E\f0\'da)\par
+11D Zdroje z\'edskan\'e9 emisiou \f1\'9at\f0\'e1tnych dlhopisov \f2\endash  finan\f1\'e8n\f0\'e9 oper\'e1cie\par
+11E Finan\f1\'e8n\f0\'fd mechanizmus EHP a N\'f3rsky finan\f1\'e8n\f0\'fd mechanizmus\par
+11E1 Finan\f1\'e8n\f0\'fd mechanizmus EHP (pr\'edspevok kraj\'edn EFTA)\par
+11E2 Rozpo\f1\'e8tov\f0\'e9 prostriedky kapitoly na spolufinancovanie EHP\par
+11E3 N\'f3rsky finan\f1\'e8n\f0\'fd mechanizmus (pr\'edspevok N\'f3rskeho kr\'e1\f1\'beovstva)\par
+11E4 Rozpo\'e8tov\f0\'e9 prostriedky kapitoly na spolufinancovanie NFM\par
+11F V\'fdskumn\'fd fond pre uhlie a oce\f1\'be\par
+11F1 V\f0\'fdskumn\'fd fond pre uhlie a oce\f1\'be (prostriedky E\f0\'da)\par
+11F2 V\'fdskumn\'fd fond pre uhlie a oce\f1\'be \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11H Transfer od ostatn\f0\'fdch subjektov verejnej spr\'e1vy\par
+11J Eur\'f3psky po\f1\'benohospod\f0\'e1rsky z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  EAGF (2. programov\f0\'e9 obdobie)\par
+11J1 Priame platby (prostriedky E\'da)\par
+11J2 N\'e1rodn\'e9 vyrovn\'e1vacie platby\f2\endash  spolufinancovanie zo \f1\'8aR\par
+11J3 Medziro\'e8n\f0\'fd n\'e1rast poh\f1\'bead\f0\'e1vky vo\f1\'e8i E\f0\'da \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11J4 Trhovo orientovan\f0\'e9 v\'fddavky (prostriedky E\'da)\par
+11J5 Trhovo orientovan\'e9 v\'fddavky \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11J7 Priame platby/cukor (prostriedky E\f0\'da)\par
+11J8 Medziro\f1\'e8n\f0\'fd n\'e1rast poh\f1\'bead\f0\'e1vky vo\f1\'e8i E\f0\'da/cukor \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11J9 Priame platby/energetick\f0\'e9 plodiny (prostriedky E\'da)\par
+11JA Medziro\f1\'e8n\f0\'fd n\'e1rast poh\f1\'bead\f0\'e1vky vo\f1\'e8i E\f0\'da/energetick\'e9 plodiny \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11K Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky fond pre rozvoj vidieka \f2\endash  EAFRD (2. programov\f0\'e9 obdobie)\par
+11K1 Rozvoj vidieka (prostriedky E\'da)\par
+11K2 Rozvoj vidieka \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11L Eur\f0\'f3psky fond pre rybn\'e9 hospod\'e1rstvo \f2\endash  (2. programov\f0\'e9 obdobie)\par
+11L1 Eur\'f3psky fond pre rybn\'e9 hospod\'e1rstvo (prostriedky E\'da)\par
+11L2 Eur\'f3psky fond pre rybn\'e9 hospod\'e1rstvo \f2\endash  spolufinancovanie zo \f1\'8aR\par
+3/2007 131 FINAN\'c8N\f0\'dd SPRAVODAJCA\par
+11M \f1\'8atruktur\f0\'e1lne opatrenia \f2\endash  (2. programov\f0\'e9 obdobie)\par
+11M1 \f1\'8atruktur\f0\'e1lne opatrenia (prostriedky E\'da)\par
+11M2 \f1\'8atruktur\f0\'e1lne opatrenia \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11N \'8avaj\'e8iarsky finan\'e8n\f0\'fd mechanizmus\par
+11N1 \f1\'8avaj\'e8iarsky finan\'e8n\f0\'fd mechanizmus (pr\'edspevok \f1\'8avaj\'e8iarskej konfeder\f0\'e1cie)\par
+11N2 Rozpo\f1\'e8tov\f0\'e9 prostriedky kapitoly na spolufinancovanie \f1\'8aFM\par
+11O Konkurencieschopnos\'9d pre rast a zamestnanos\'9d (2. programov\f0\'e9 obdobie)\par
+11O1 Doprava a energia (prostriedky E\'da)\par
+11O2 Doprava a energia \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11O3 V\f0\'fdskum, v\'fdvoj a inov\'e1cie (prostriedky E\'da)\par
+11O4 V\'fdskum, v\'fdvoj a inov\'e1cie \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11O5 Vzdel\f0\'e1vanie a soci\'e1lne veci (prostriedky E\'da)\par
+11O6 Vzdel\'e1vanie a soci\'e1lne veci \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11O7 Dane, cl\f0\'e1 a financie (prostriedky E\'da)\par
+11O8 Dane, cl\'e1 a financie \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11O9 In\f0\'e9 (prostriedky E\'da)\par
+11OA In\'e9 \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11P Ob\'e8ianstvo (2. programov\f0\'e9 obdobie)\par
+11P1 Zdravie, ochrana spotrebite\f1\'bea, komunik\f0\'e1cia (prostriedky E\'da)\par
+11P2 Zdravie, ochrana spotrebite\f1\'bea, komunik\f0\'e1cia \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11P3 Kult\f0\'fara a m\'e9di\'e1 (prostriedky E\'da)\par
+11P4 Kult\'fara a m\'e9di\'e1 \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11R Sloboda, bezpe\'e8nos\'9d a spravodlivos\'9d (2. programov\f0\'e9 obdobie)\par
+11R1 Riadenie migr\'e1cie, ochrana hran\'edc (prostriedky E\'da)\par
+11R2 Riadenie migr\'e1cie, ochrana hran\'edc \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11R3 In\f0\'e9 (prostriedky E\'da)\par
+11R4 In\'e9 \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11S Eur\f0\'f3psky fond region\'e1lneho rozvoja (2. programov\'e9 obdobie)\par
+11S1 Eur\'f3psky fond region\'e1lneho rozvoja (prostriedky E\'da)\par
+11S2 Eur\'f3psky fond region\'e1lneho rozvoja \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11T Eur\f0\'f3psky soci\'e1lny fond (2. programov\'e9 obdobie)\par
+11T1 Eur\'f3psky soci\'e1lny fond (prostriedky E\'da)\par
+11T2 Eur\'f3psky soci\'e1lny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11U Koh\f0\'e9zny fond (2. programov\'e9 obdobie)\par
+11U1 Koh\'e9zny fond (prostriedky E\'da)\par
+11U2 Koh\'e9zny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+132 3/2007 FINAN\'c8N\f0\'dd SPRAVODAJCA\par
+12 \f2\endash  Zdroje z kapitoly V\f1\'9aeobecn\f0\'e1 pokladni\f1\'e8n\f0\'e1 spr\'e1va\par
+121 \f2\endash  zdroje z kapitoly V\f1\'9aeobecn\f0\'e1 pokladni\f1\'e8n\f0\'e1 spr\'e1va\par
+123 \f2\endash  zdroje na spolufinancovanie ISPA\par
+125 \endash  zdroje na spolufinancovanie Prechodn\f0\'fd fond\par
+126 \f2\endash  zdroje na spolufinancovanie Finan\f1\'e8n\f0\'e9ho mechanizmu EHP\par
+127 \f2\endash  zdroje na spolufinancovanie N\f0\'f3rskeho finan\f1\'e8n\f0\'e9ho mechanizmu\par
+128 \f2\endash  zdroje na spolufinancovanie \f1\'8avaj\'e8iarskeho finan\'e8n\f0\'e9ho mechanizmu\par
+129 \f2\endash  zdroje na spolufinancovanie ISPA kryt\f0\'e9 \'faverom\par
+13 \f2\endash  Zdroje z predch\f0\'e1dzaj\'facich rokov\par
+131 \f2\endash  zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu\par
+1315 \f2\endash  zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu z r. 2005 (prostriedky \'9at\f0\'e1tneho rozpo\f1\'e8tu viazan\f0\'e9 v roku 2005;\par
+nevy\f1\'e8erpan\f0\'e9 v r. 2006 a viazan\'e9 v r. 2006)\par
+1316 \f2\endash  zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu z r. 2006 (nevy\'e8erpan\f0\'e9 prostriedky z r. 2006)\par
+134 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF)\par
+1341 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF)\par
+1342 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF) \f2\endash  spolufinancovanie zo \f1\'8aR\par
+135 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja\par
+1351 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja (prostriedky E\'da)\par
+1352 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja \f2\endash  spolufinancovanie zo \f1\'8aR\par
+136 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond\par
+1361 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond (prostriedky E\'da)\par
+1362 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+137 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond\par
+1371 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  usmer\f1\'f2ovacia sekcia\par
+(prostriedky E\f0\'da)\par
+1372 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  usmer\f1\'f2ovacia sekcia spolufinancovanie zo \'8aR\par
+138 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu\par
+1381 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu (prostriedky E\f0\'da)\par
+1382 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu \f2\endash  spolufinancovanie zo \f1\'8aR\par
+139 \f2\endash  Koh\f0\'e9zny fond\par
+1391 \f2\endash  Koh\f0\'e9zny fond\par
+1392 \f2\endash  Koh\f0\'e9zny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+13A Vn\f0\'fatorn\'e9 politiky\par
+13A1 Vn\'fatorn\'e9 opatrenia\par
+13A2 Prechodn\'fd fond (prostriedky E\'da)\par
+13A3 Budovanie Schengensk\'fdch hran\'edc\par
+13A4 Odstavenie bloku V1 Jaslovsk\'e9 Bohunice\par
+13A5 Spolufinancovanie zo \f1\'8aR k Prechodn\f0\'e9mu fondu \f2\endash  kapitola VPS\par
+3/2007 133 FINAN\f1\'c8N\f0\'dd SPRAVODAJCA\par
+13A6 Budovanie Schengensk\'fdch hran\'edc \f2\endash  spolufinancovanie z rozpo\f1\'e8tov\f0\'fdch prostriedkov\par
+kapitoly\par
+13A7 Prechodn\'fd fond \f2\endash  spolufinancovanie z rozpo\f1\'e8tov\f0\'fdch prostriedkov kapitoly\par
+13B Rozpo\f1\'e8tov\f0\'e9 prostriedky kapitoly na spolufinancovanie predvstupov\'fdch fondov\par
+13B2 ISPA\par
+13C Vl\'e1dne \'favery\par
+13C1 Eur\'f3pska investi\f1\'e8n\f0\'e1 banka\par
+13C2 Rozvojov\'e1 banka Rady Eur\'f3py\par
+13C3 Svetov\'e1 banka\par
+13C4 In\'e9\par
+13C5 Vl\'e1dne \'favery \f2\endash  spolufinancovanie (k prostriedkom E\f0\'da)\par
+13F V\'fdskumn\'fd fond pre uhlie a oce\f1\'be\par
+13F1 V\f0\'fdskumn\'fd fond pre uhlie a oce\f1\'be (prostriedky E\f0\'da)\par
+13F2 V\'fdskumn\'fd fond pre uhlie a oce\f1\'be \f2\endash  spolufinancovanie zo \f1\'8aR\par
+12P Zdroje z kapitoly V\'9aeobecn\f0\'e1 pokladni\f1\'e8n\f0\'e1 spr\'e1va z predch\'e1dzaj\'facich rokov\par
+12P1 zdroje z kapitoly V\f1\'9aeobecn\f0\'e1 pokladni\f1\'e8n\f0\'e1 spr\'e1va\par
+12P3 zdroje na spolufinancovanie ISPA\par
+12P5 zdroje na spolufinancovanie Prechodn\'fd fond\par
+12P9 zdroje na spolufinancovanie ISPA kryt\'e9 \'faverom\par
+14 \f2\endash  Zdroje z ostatn\f0\'fdch rozpo\f1\'e8tov\f0\'fdch kapitol (napr. verejno-prospe\f1\'9an\f0\'e9 pr\'e1ce, SAV)\par
+20 \f2\endash  \f1\'8at\f0\'e1tne finan\f1\'e8n\f0\'e9 akt\'edva\par
+30 \f2\endash  Zdroje zo zahrani\f1\'e8ia (nen\f0\'e1vratn\'e9)\par
+32 \f2\endash  ISPA\par
+35 \endash  in\f0\'e9 zdroje zo zahrani\f1\'e8ia (napr. NATO)\par
+36 \f2\endash  Prostriedky z E\f0\'da (finan\f1\'e8n\f0\'e9 pr\'edspevky Spolo\f1\'e8enstva na osobitn\f0\'e9 veterin\'e1rne a fytosanit\'e1rne \f1\'e8innosti a na vytvorenie a \f0\'fadr\f1\'9ebu po\'benohospod\f0\'e1rskych \'fa\f1\'e8tovn\f0\'fdch informa\f1\'e8n\f0\'fdch\par
+syst\'e9mov)\par
+40 \f2\endash  Vlastn\f0\'e9 zdroje kapitoly\par
+(plat\'ed najm\'e4 pre pr\'edspevkov\'e9 organiz\'e1cie)\par
+41 \f2\endash  zdroje zo zisku\par
+42 \endash  zdroje z predaja majetku\par
+43 \endash  pr\f0\'edspevky prijat\'e9 na zdru\f1\'9een\f0\'fa v\'fdstavbu\par
+45 \f2\endash  in\f0\'e9 zdroje vy\f1\'9a\'9aie neuveden\f0\'e9\par
+46 \f2\endash  vlastn\f0\'e9 zdroje \f1\'9at\f0\'e1tneho fondu\par
+134 3/2007 FINAN\f1\'c8N\f0\'dd SPRAVODAJCA\par
+50 \f2\endash  Bankov\f0\'e9 \'favery\par
+51 \f2\endash  bankov\f0\'e9 \'favery so \f1\'9at\f0\'e1tnou z\'e1rukou\par
+52 \f2\endash  bankov\f0\'e9 \'favery bez \f1\'9at\f0\'e1tnej z\'e1ruky\par
+70 \f2\endash  in\f0\'e9 zdroje\par
+71 \f2\endash  in\f0\'e9 zdroje\par
+72 \f2\endash  vybran\f0\'e9 mimorozpo\f1\'e8tov\f0\'e9 prostriedky a ostatn\'e9 nerozpo\f1\'e8tovan\f0\'e9 pr\'edjmy\par
+2) v rozpo\f1\'e8toch obc\f0\'ed a vy\f1\'9a\'9a\f0\'edch \'fazemn\'fdch celkov\par
+10 \f2\endash  Zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu\par
+11 \f2\endash  Zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu\par
+111 \f2\endash  zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu\par
+114 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF)\par
+1141 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF)\par
+1142 \f2\endash  Rozvoj vidieka (Z\f0\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF) \f2\endash  spolufinancovanie zo \f1\'8aR\par
+115 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja\par
+1151 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja (prostriedky E\'da)\par
+1152 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja \f2\endash  spolufinancovanie zo \f1\'8aR\par
+116 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond\par
+1161 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond (prostriedky E\'da)\par
+1162 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+117 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond\par
+1171 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  usmer\f1\'f2ovacia sekcia\par
+(prostriedky E\f0\'da)\par
+1172 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  usmer\f1\'f2ovacia sekcia \f2\endash\par
+spolufinancovanie zo \f1\'8aR\par
+118 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu\par
+1181 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu (prostriedky E\f0\'da)\par
+1182 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu \f2\endash  spolufinancovanie zo \f1\'8aR\par
+119 \f2\endash  Koh\f0\'e9zny fond\par
+1191 \f2\endash  Koh\f0\'e9zny fond\par
+1192 \f2\endash  Koh\f0\'e9zny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11A Vn\f0\'fatorn\'e9 politiky\par
+11A1 Vn\'fatorn\'e9 opatrenia\par
+11A2 Prechodn\'fd fond (prostriedky E\'da)\par
+11A3 Budovanie Schengensk\'fdch hran\'edc\par
+11A4 Odstavenie bloku V1 Jaslovsk\'e9 Bohunice\par
+11A5 Spolufinancovanie zo \f1\'8aR k Prechodn\f0\'e9mu fondu\par
+3/2007 135 FINAN\f1\'c8N\f0\'dd SPRAVODAJCA\par
+11B Rozpo\f1\'e8tov\f0\'e9 prostriedky obc\'ed a vy\f1\'9a\'9a\f0\'edch \'fazemn\'fdch celkov na spolufinancovanie predvstupov\'fdch fondov a grantov E\'da\par
+11B2 ISPA\par
+11B4 Konkurencieschponos\f1\'9d pre rast a zamestnanos\'9d; Ob\'e8ianstvo; Sloboda, bezpe\'e8nos\'9d\par
+a spravodlivos\'9d\par
+11E Finan\'e8n\f0\'fd mechanizmus EHP a N\'f3rsky finan\f1\'e8n\f0\'fd mechanizmus\par
+11E1 Finan\f1\'e8n\f0\'fd mechanizmus EHP (pr\'edspevok kraj\'edn EFTA)\par
+11E2 Spolufinancovanie zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu\par
+11E3 N\f0\'f3rsky finan\f1\'e8n\f0\'fd mechanizmus (pr\'edspevok N\'f3rskeho kr\'e1\f1\'beovstva)\par
+11E4 Spolufinancovanie zo \'9at\f0\'e1tneho rozpo\f1\'e8tu\par
+11E5 Spolufinancovanie k Finan\'e8n\f0\'fdm mechanizmom z rozpo\f1\'e8tu obce, resp. V\f0\'daC\par
+11G Rozpo\f1\'e8tov\f0\'e9 prostriedky obc\'ed a vy\f1\'9a\'9a\f0\'edch \'fazemn\'fdch celkov na spolufinancovanie povstupov\'fdch fondov\par
+11G4 Rozvoj vidieka (Z\'e1ru\f1\'e8n\f0\'e1 sekcia EAGGF)\par
+11G5 Eur\'f3psky fond region\'e1lneho rozvoja\par
+11G6 Eur\'f3psky soci\'e1lny fond\par
+11G7 Eur\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond\par
+11G8 Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu\par
+11G9 Koh\f0\'e9zny fond\par
+11GA Eur\'f3psky fond region\'e1lneho rozvoja (2. programov\'e9 obdobie)\par
+11GB Eur\'f3psky soci\'e1lny fond (2. programov\'e9 obdobie)\par
+11GC Koh\'e9zny fond (2. programov\'e9 obdobie)\par
+11GD Eur\'f3psky po\f1\'benohospod\f0\'e1rsky fond pre rozvoj vidieka \f2\endash  EAFRD (2. programov\f0\'e9 obdobie)\par
+11H Transfer od ostatn\'fdch subjektov verejnej spr\'e1vy (okrem dot\'e1ci\'ed zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu,\par
+\'9at\f0\'e1tneho fondu a zo zdrojov Fondu n\'e1rodn\'e9ho majetku SR)\par
+11K Eur\'f3psky po\f1\'benohospod\f0\'e1rsky fond pre rozvoj vidieka \f2\endash  EAFRD (2. programov\f0\'e9 obdobie)\par
+11K1 Rozvoj vidieka (prostriedky E\'da)\par
+11K2 Rozvoj vidieka \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11N \'8avaj\'e8iarsky finan\'e8n\f0\'fd mechanizmus\par
+11N1 \f1\'8avaj\'e8iarsky finan\'e8n\f0\'fd mechanizmus (pr\'edspevok \f1\'8avaj\'e8iarskej konfeder\f0\'e1cie)\par
+11N2 Rozpo\f1\'e8tov\f0\'e9 prostriedky kapitoly na spolufinancovanie \f1\'8aFM\par
+11N3 Spolufinancovanie k \'8aFM z rozpo\'e8tu obce, resp. V\f0\'daC\par
+11O Konkurencieschopnos\f1\'9d pre rast a zamestnanos\'9d (2. programov\f0\'e9 obdobie)\par
+11O1 Doprava a energia (prostriedky E\'da)\par
+11O2 Doprava a energia \f2\endash  spolufinancovanie zo \f1\'8aR\par
+136 3/2007 FINAN\'c8N\f0\'dd SPRAVODAJCA\par
+11O3 V\'fdskum, v\'fdvoj a inov\'e1cie (prostriedky E\'da)\par
+11O4 V\'fdskum, v\'fdvoj a inov\'e1cie \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11O5 Vzdel\f0\'e1vanie a soci\'e1lne veci (prostriedky E\'da)\par
+11O6 Vzdel\'e1vanie a soci\'e1lne veci \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11O7 Dane, cl\f0\'e1 a financie (prostriedky E\'da)\par
+11O8 Dane, cl\'e1 a financie \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11O9 In\f0\'e9 (prostriedky E\'da)\par
+11OA In\'e9 \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11P Ob\'e8ianstvo (2. programov\f0\'e9 obdobie)\par
+11P1 Zdravie, ochrana spotrebite\f1\'bea, komunik\f0\'e1cia (prostriedky E\'da)\par
+11P2 Zdravie, ochrana spotrebite\f1\'bea, komunik\f0\'e1cia \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11P3 Kult\f0\'fara a m\'e9di\'e1 (prostriedky E\'da)\par
+11P4 Kult\'fara a m\'e9di\'e1 \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11R Sloboda, bezpe\'e8nos\'9d a spravodlivos\'9d (2. programov\f0\'e9 obdobie)\par
+11R1 Riadenie migr\'e1cie, ochrana hran\'edc (prostriedky E\'da)\par
+11R2 Riadenie migr\'e1cie, ochrana hran\'edc \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11R3 In\f0\'e9 (prostriedky E\'da)\par
+11R4 In\'e9 \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11S Eur\f0\'f3psky fond region\'e1lneho rozvoja (2. programov\'e9 obdobie)\par
+11S1 Eur\'f3psky fond region\'e1lneho rozvoja (prostriedky E\'da)\par
+11S2 Eur\'f3psky fond region\'e1lneho rozvoja \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11T Eur\f0\'f3psky soci\'e1lny fond (2. programov\'e9 obdobie)\par
+11T1 Eur\'f3psky soci\'e1lny fond (prostriedky E\'da)\par
+11T2 Eur\'f3psky soci\'e1lny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+11U Koh\f0\'e9zny fond (2. programov\'e9 obdobie)\par
+11U1 Koh\'e9zny fond (prostriedky E\'da)\par
+11U2 Koh\'e9zny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+12 \f2\endash  Zdroje z kapitoly V\f1\'9aeobecn\f0\'e1 pokladni\f1\'e8n\f0\'e1 spr\'e1va\par
+121 \f2\endash  zdroje z kapitoly V\f1\'9aeobecn\f0\'e1 pokladni\f1\'e8n\f0\'e1 spr\'e1va\par
+13 \f2\endash  Zdroje z predch\f0\'e1dzaj\'facich rokov\par
+131 \f2\endash  zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu\par
+1315 \f2\endash  zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu z r. 2005\par
+1316 \f2\endash  zo \f1\'9at\f0\'e1tneho rozpo\f1\'e8tu z r. 2006\par
+132 \f2\endash  finan\f1\'e8n\f0\'e9 prostriedky prijat\'e9 od in\'fdch subjektov pod\f1\'bea osobitn\f0\'e9ho z\'e1kona\par
+135 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja\par
+3/2007 137 FINAN\f1\'c8N\f0\'dd SPRAVODAJCA\par
+1351 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja (prostriedky E\'da)\par
+1352 \f2\endash  Eur\f0\'f3psky fond region\'e1lneho rozvoja \f2\endash  spolufinancovanie zo \f1\'8aR\par
+136 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond\par
+1361 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond (prostriedky E\'da)\par
+1362 \f2\endash  Eur\f0\'f3psky soci\'e1lny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+137 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond\par
+1371 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  usmer\f1\'f2ovacia sekcia\par
+(prostriedky E\f0\'da)\par
+1372 \f2\endash  Eur\f0\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond \f2\endash  usmer\f1\'f2ovacia sekcia\par
+spolufinancovanie zo \'8aR\par
+138 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu\par
+1381 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu (prostriedky E\f0\'da)\par
+1382 \f2\endash  Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu \f2\endash  spolufinancovanie zo \f1\'8aR\par
+139 \f2\endash  Koh\f0\'e9zny fond\par
+1391 \f2\endash  Koh\f0\'e9zny fond\par
+1392 \f2\endash  Koh\f0\'e9zny fond \f2\endash  spolufinancovanie zo \f1\'8aR\par
+13A Vn\f0\'fatorn\'e9 politiky\par
+13A1 Vn\'fatorn\'e9 opatrenia\par
+13A2 Prechodn\'fd fond (prostriedky E\'da)\par
+13A3 Budovanie Schengensk\'fdch hran\'edc\par
+13A4 Odstavenie bloku V1 Jaslovsk\'e9 Bohunice\par
+13A5 Spolufinancovanie zo \f1\'8aR k Prechodn\f0\'e9mu fondu \f2\endash  kapitola VPS\par
+13B Rozpo\f1\'e8tov\f0\'e9 prostriedky obc\'ed a vy\f1\'9a\'9a\f0\'edch \'fazemn\'fdch celkov na spolufinancovanie predvstupov\'fdch fondov\par
+13B2 ISPA\par
+13G Rozpo\f1\'e8tov\f0\'e9 prostriedky obc\'ed a vy\f1\'9a\'9a\f0\'edch \'fazemn\'fdch celkov na spolufinancovanie povstupov\'fdch fondov\par
+13G5 Eur\'f3psky fond region\'e1lneho rozvoja\par
+13G6 Eur\'f3psky soci\'e1lny fond\par
+13G7 Eur\'f3psky po\f1\'benohospod\f0\'e1rsky usmer\f1\'f2ovac\f0\'ed a z\'e1ru\f1\'e8n\f0\'fd fond\par
+13G8 Finan\f1\'e8n\f0\'fd n\'e1stroj na usmer\f1\'f2ovanie rybolovu\par
+13G9 Koh\f0\'e9zny fond\par
+12P Zdroje z kapitoly V\f1\'9aeobecn\f0\'e1 pokladni\f1\'e8n\f0\'e1 spr\'e1va z predch\'e1dzaj\'facich rokov\par
+12P1 \f2\endash  zdroje z kapitoly V\f1\'9aeobecn\f0\'e1 pokladni\f1\'e8n\f0\'e1 spr\'e1va\par
+20 \f2\endash  Finan\f1\'e8n\f0\'e9 akt\'edva\par
+30 \f2\endash  Zdroje zo zahrani\f1\'e8ia (nen\f0\'e1vratn\'e9)\par
+32 \f2\endash  ISPA\par
+35 \endash  in\f0\'e9 zdroje zo zahrani\f1\'e8ia (napr. NATO)\par
+138 3/2007 FINAN\'c8N\f0\'dd SPRAVODAJCA\par
+40 \f2\endash  Vlastn\f0\'e9 zdroje\par
+41 \f2\endash  vlastn\f0\'e9 pr\'edjmy obc\'ed a V\'daC (napr. miestne dane a poplatky, da\f1\'f2 z motorov\f0\'fdch vozidiel)\par
+42 \f2\endash  zdroje zo zisku\par
+43 \endash  zdroje z predaja majetku\par
+44 \endash  pr\f0\'edspevky prijat\'e9 na zdru\f1\'9een\f0\'fa v\'fdstavbu\par
+45 \f2\endash  dot\f0\'e1cie poskytnut\'e9 zo \f1\'9at\f0\'e1tneho fondu\par
+46 \f2\endash  in\f0\'e9 zdroje vy\f1\'9a\'9aie neuveden\f0\'e9\par
+50 \f2\endash  Bankov\f0\'e9 \'favery\par
+51 \f2\endash  bankov\f0\'e9 \'favery so \f1\'9at\f0\'e1tnou z\'e1rukou\par
+52 \f2\endash  bankov\f0\'e9 \'favery bez \f1\'9at\f0\'e1tnej z\'e1ruky\par
+60 \f2\endash  zdroje z FNM SR\par
+70 \endash  in\f0\'e9 zdroje\par
+71 \f2\endash  in\f0\'e9 zdroje\par
+72 \f2\endash  vybran\f0\'e9 mimorozpo\f1\'e8tov\f0\'e9 prostriedky a ostatn\'e9 nerozpo\f1\'e8tovan\f0\'e9 pr\'edjmy\par
+Vysvetlivky ku k\'f3dom zdrojov:\par
+11O Konkurencieschopnos\f1\'9d pre rast a zamestnanos\'9d (2. programov\f0\'e9 obdobie)\par
+Doprava a energia\par
+\f2\endash  pr\f0\'edjmy z programov E\'da, napr. TEN-doprava, TEN-energia, Marco-Polo II, Galileo, Jaslovsk\'e9\par
+Bohunice\par
+\f2\endash  napr. MDPT SR, MH SR\par
+V\f0\'fdskum, v\'fdvoj a inov\'e1cie\par
+\f2\endash  pr\f0\'edjmy z programov E\'da, napr. R\'e1mcov\'e9 programy pre v\'fdskum a v\'fdvoj, R\'e1mcov\'fd program\par
+pre konkurencieschopnos\f1\'9d a inov\f0\'e1cie\par
+\f2\endash  napr. M\f1\'8a SR, MH SR, SAV\par
+Vzdel\f0\'e1vanie a soci\'e1lne veci\par
+\f2\endash  pr\f0\'edjmy z programov E\'da, napr. Progress, celo\f1\'9eivotn\f0\'e9 vzdel\'e1vanie, Comenius, Leonardo da\par
+Vinci, Erasmus, Mundus, Gruntvig\par
+\f2\endash  napr. MPSVR SR, M\f1\'8a SR\par
+Dane, cl\f0\'e1 a financie\par
+\f2\endash  pr\f0\'edjmy z programov E\'da, napr. Customs, Fiscalis, V\'fdmena \'fadajov medzi administrat\'edvami,\par
+podnikate\f1\'bemi a ob\'e8anmi-IDA, Computerisation of the excise system (EMCS)\par
+\f2\endash  napr. MF SR, CR SR, DR SR\par
+3/2007 139 FINAN\f1\'c8N\f0\'dd SPRAVODAJCA\par
+In\'e9\par
+\f2\endash  pr\f0\'edjmy z programov E\'da z oblast\'ed ochrany internetu, vn\'fatorn\'e9ho trhu, \f1\'9atatistiky, boja proti podvodom, napr. Bezpe\'e8nej\'9a\f0\'ed internet plus, eContent Plus\par
+\f2\endash  napr. MF SR, MH SR, \f1\'8aU SR\par
+11P Ob\'e8ianstvo (2. programov\f0\'e9 obdobie)\par
+Zdravie, ochrana spotrebite\f1\'bea, komunik\f0\'e1cia\par
+\f2\endash  pr\f0\'edjmy z programov E\'da, napr. Verejn\'e9 zdravie, Ochrana spotrebite\f1\'bea, pr\f0\'edjmy z programov\par
+E\'da v oblasti komunik\'e1cie, informa\f1\'e8nej politiky\par
+\f2\endash  napr. MZ SR, MH SR\par
+Kult\f0\'fara a m\'e9di\'e1\par
+\f2\endash  pr\f0\'edjmy z programov E\'da, napr. Kult\'fara 2007, Ml\'e1de\f1\'9e, M\f0\'e9dia 2007, Ob\f1\'e8ianstvo\par
+\f2\endash  napr. MK SR, M\f1\'8a SR, MPSVR SR\par
+11R Sloboda, bezpe\'e8nos\'9d a spravodlivos\'9d (2. programov\f0\'e9 obdobie)\par
+Riadenie migr\'e1cie, ochrana hran\'edc\par
+\f2\endash  pr\f0\'edjmy z programov E\'da, napr. Eur\'f3psky ute\f1\'e8eneck\f0\'fd fond, Fond pre vonkaj\f1\'9aie hranice, Eur\f0\'f3psky fond pre integr\'e1ciu pr\'edslu\f1\'9an\f0\'edkov tret\'edch kraj\'edn, Eur\'f3psky fond pre n\'e1vraty\par
+\f2\endash  napr. MV SR, Migra\f1\'e8n\f0\'fd \'farad\par
+In\'e9\par
+\f2\endash  pr\f0\'edjmy z programov E\'da v oblasti z\'e1kladn\'e9 pr\'e1va a spravodlivos\f1\'9d, napr. Z\f0\'e1kladn\'e9 pr\'e1va,\par
+Trestno pr\'e1vna spravodlivos\f1\'9d, Ob\'e8iansko pr\f0\'e1vna spravodlivos\f1\'9d, Program boja proti n\f0\'e1siliu\par
+(Daphne) a prevencia pred drogami a informovanos\f1\'9d, a v oblasti Bezpe\'e8nos\'9d a zabezpe\'e8enie slob\f0\'f4d, napr. Prevencia, pripravenos\f1\'9d a riadenie n\f0\'e1sledkov terorizmu, Prevencia a boj\par
+proti kriminalite\par
+\f2\endash  napr. MV SR\par
+140 3/2007 FINAN\f1\'c8N\f0\'dd SPRAVODAJCA\lang9\par
+}</value>
+  </data>
+  <data name="ImportObceTitle" xml:space="preserve">
+    <value>Import udajov na SQL Server - MaO</value>
+  </data>
+  <data name="DataDirectory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="vvs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vvs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportPROTItle" xml:space="preserve">
+    <value>Import udajov na SQL Server - PRO</value>
+  </data>
+  <data name="plus48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notfound140b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notfound140b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoSegm" xml:space="preserve">
+    <value />
+  </data>
+  <data name="text301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cvti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cvti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="excel_white_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel_white_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="json_import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\json_import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sql50x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql50x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\num30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="importtest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\importtest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report_white_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report_white_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="validate50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\validate50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HlavickyInfp" xml:space="preserve">
+    <value>Prehľad hlavičkových súborov aplikácie ISEF zobrazuje XLSX súbory slúžiace ako predloha pre výstupné zostavy aplikácie ISEF.</value>
+  </data>
+  <data name="export50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="import75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\import75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoObec" xml:space="preserve">
+    <value />
+  </data>
+  <data name="delete48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZostavyInfo" xml:space="preserve">
+    <value>Prehľad zostáv aplikácie ISEF. Zostava je výstupný report postavený na konkrétnej hlavičke. Zostava k výberu pridavá dodatočnú podmienku a možnosť editácie nadpisov.</value>
+  </data>
+  <data name="vuc100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vuc100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AktivaciaErrorTitle" xml:space="preserve">
+    <value>Aktivácia zlyhala</value>
+  </data>
+  <data name="update50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-msr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-msr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sql501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoreInfoObec" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hamburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hamburger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeneratorInfo" xml:space="preserve">
+    <value>Generátor aplikácie ISEF umožňuje vytváranie, mazanie a editovanie vlastných podmienok a výberových SQL SELECT príkazov.</value>
+  </data>
+  <data name="rocenka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocenka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnifier100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifier100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dashboard_white_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dashboard_white_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="condition___" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\condition___.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="display20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\display20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoOrg" xml:space="preserve">
+    <value />
+  </data>
+  <data name="calendar40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cvti_transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cvti_transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportVVSTItle" xml:space="preserve">
+    <value>Import udajov na SQL Server - VVS</value>
+  </data>
+  <data name="banner2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mv100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mv100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notfound140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notfound140.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warning50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warning50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discard48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discard48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equals100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equals100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HlavickyTitle" xml:space="preserve">
+    <value>HLAVIČKY</value>
+  </data>
+  <data name="app_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportVVSInfo" xml:space="preserve">
+    <value>Údaje za verejné vysoké školy sa importujú z jedného XLSX zošita. Údaje sú dodávané v starom formáte XLS, treba ich uložiť ako XLSX aby ich program vedel spracovať.</value>
+  </data>
+  <data name="clone32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clone32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="excel75_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel75_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notfound200x115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notfound200x115.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sql50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="isefinit5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isefinit5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mao100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mao100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vvs100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vvs100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subtreremove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subtreremove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoOkres" xml:space="preserve">
+    <value />
+  </data>
+  <data name="excel1_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel1_35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="isefinit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isefinit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reload48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reload48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="in100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\in100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emptytest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emptytest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gt100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gt100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mao100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mao100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoUcet" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MoreInfoOkres" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MoreInfoFunkcna" xml:space="preserve">
+    <value />
+  </data>
+  <data name="save501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banner3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sql751" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql751.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataTitle" xml:space="preserve">
+    <value>DATA</value>
+  </data>
+  <data name="saveas48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saveas48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dbimport80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dbimport80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="isefinit4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isefinit4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-delete-file-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-delete-file-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DashboardTitle" xml:space="preserve">
+    <value>DASHBOARD</value>
+  </data>
+  <data name="lt100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lt100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lt100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lt100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="export64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dataimport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dataimport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="like100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\like100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="excel48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportMVTitle" xml:space="preserve">
+    <value>Import udajov na SQL Server - MV</value>
+  </data>
+  <data name="save50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileHelp" xml:space="preserve">
+    <value>index.html</value>
+  </data>
+  <data name="GeneratorTitle" xml:space="preserve">
+    <value>GENERATOR</value>
+  </data>
+  <data name="ms100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ms100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoreInfoOrg" xml:space="preserve">
+    <value />
+  </data>
+  <data name="in100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\in100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banner1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="generate50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\generate50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HlavickyDirectory" xml:space="preserve">
+    <value>Hlavicky</value>
+  </data>
+  <data name="mv100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mv100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="between100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\between100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ms100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ms100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VFPOLEDBLink" xml:space="preserve">
+    <value>https://www.microsoft.com/en-us/download/details.aspx?id=14839</value>
+    <comment>Link na stiahnutie VFPOLEDB data provideru</comment>
+  </data>
+  <data name="ZostavyTitle" xml:space="preserve">
+    <value>ZOSTAVY</value>
+  </data>
+  <data name="InfoProgram" xml:space="preserve">
+    <value />
+  </data>
+  <data name="db_import75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\db_import75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpDirectory" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="save30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="excel50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="isefinit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isefinit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vvs100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vvs100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OutputDirectory" xml:space="preserve">
+    <value>Vystup</value>
+  </data>
+  <data name="ImportPROInfo" xml:space="preserve">
+    <value>Údaje za priamo riadené organizácie sa importujú z dvoch XLSX zošitov. Jeden za príspevkové a jeden za rozpočtové organizácie. Údaje sú dodávané v starom formáte XLS, treba ich uložiť ako XLSX aby ich program vedel spracovať.</value>
+  </data>
+  <data name="gear20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gear20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoreInfoProgram" xml:space="preserve">
+    <value />
+  </data>
+  <data name="subtreeadd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subtreeadd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportObceInfo" xml:space="preserve">
+    <value>Údaje za mestá a obce sa spravidla importujú z ôsmich DBF tabuliek jednej pre každý kraj, kde názov tabuľky je kódové označenie kraja. Očakávaná štruktúra vstupných DBF tabuľiek po stlačení tlačidla Help</value>
+  </data>
+  <data name="between100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\between100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoreInfoZdroj" xml:space="preserve">
+    <value>https://www.saia.sk/_user/documents/FondNIL/Financny-spravodajca-03-2007_kody-zdrojov.pdf</value>
+  </data>
+  <data name="blured_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blured_action.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CiselnokyInfo" xml:space="preserve">
+    <value>Číselníky aplikácie ISEF, umožňujú editovať údaje. Číselníky sú špecifikcé pre každý nahraný rok.</value>
+  </data>
+  <data name="bracket30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bracket30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nenahranepolozky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nenahranepolozky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gt100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gt100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportVUCInfo" xml:space="preserve">
+    <value>Údaje za vyššie územné celky sa importujú z dvoch XLSX zošitov. Jeden za príspevkové a jeden za rozpočtové organizácie. Údaje sú dodávané v starom formáte XLS, treba ich uložiť ako XLSX aby ich program vedel spracovať.</value>
+  </data>
+  <data name="vuc100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vuc100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportMVInfo" xml:space="preserve">
+    <value>Údaje za ministerstvo vnútra sa importujú z dvoch XLSX zošitov. Jeden za príspevkové a jeden za rozpočtové organizácie. Údaje sú dodávané v starom formáte XLS, treba ich uložiť ako XLSX aby ich program vedel spracovať.</value>
+  </data>
+  <data name="action_blured" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\action_blured.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filereload50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filereload50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportVUCTitle" xml:space="preserve">
+    <value>Import udajov na SQL Server - VUC</value>
+  </data>
+  <data name="InfoFunkcna" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MoreInfoEkonomicka" xml:space="preserve">
+    <value />
+  </data>
+  <data name="folder48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="welcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\welcome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CiselnikyTitle" xml:space="preserve">
+    <value>ČÍSELNÍKY</value>
+  </data>
+  <data name="blue35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AktivaciaErrorMessage" xml:space="preserve">
+    <value>Aktivácia tabu {t} zlyhala. Chyba pri aktivácii: {e}.</value>
+  </data>
+  <data name="logo94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="isefinit3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isefinit3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoEkonomicka" xml:space="preserve">
+    <value />
+  </data>
+  <data name="update75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoreInfoKraj" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MoreInfoUcet" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rozbory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rozbory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fun30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fun30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-data-transfer-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-data-transfer-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="removedata100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\removedata100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\green35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataInfo" xml:space="preserve">
+    <value>Dáta aplikácie ISEF. Umožňuje ľubovolný prehľad nahraných údajov v aplkácii za pomoci vytvorených SQL podmienok a SELECT dotazov.</value>
+  </data>
+  <data name="InfoKraj" xml:space="preserve">
+    <value />
+  </data>
+  <data name="red35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\red35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-analyze-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-analyze-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prazdne_zostavy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prazdne_zostavy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mao1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nodata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nodata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="full20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\full20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transfer48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transfer48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equals100h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equals100h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ssaveas48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ssaveas48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sql_white_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql_white_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lookup_white_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lookup_white_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sql75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_clmn64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_clmn64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="like100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\like100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="isefinit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isefinit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="databackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\databackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oecd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oecd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DashboardInfo" xml:space="preserve">
+    <value>Dashboard aplikácie ISEF, obsahujúci sumárne informácie o nahatých údajoch, a prehľad aktivity používateľov.</value>
+  </data>
+  <data name="settings50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mv.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start1001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start1001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="update48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2015.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoreInfoSegment" xml:space="preserve">
+    <value />
+  </data>
+  <data name="importjson50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\importjson50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warning_white_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warning_white_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VFPOLEDB8Link" xml:space="preserve">
+    <value>https://www.microsoft.com/en-us/download/details.aspx?id=32602</value>
+  </data>
+</root>

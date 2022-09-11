@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1481DA3F-7086-4B06-9262-81D9EE68B011}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cvti.data</RootNamespace>
+    <AssemblyName>DPL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Restart|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Restart\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Development|AnyCPU'">
+    <OutputPath>bin\Development\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Dev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Reset|AnyCPU'">
+    <OutputPath>bin\Reset\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugReset|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugReset\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.2.0\lib\net45\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classifiers\NovaOrganizacia.cs" />
+    <Compile Include="Classifiers\ChybajuciRiadok.cs" />
+    <Compile Include="Conditions\EmptyCondition.cs" />
+    <Compile Include="Conditions\CompoundCondition.cs" />
+    <Compile Include="Conditions\PlainTextCondition.cs" />
+    <Compile Include="Core\ConfigKey.cs" />
+    <Compile Include="Classifiers\AnalytickaEvidenciaNovaHodnota.cs" />
+    <Compile Include="Core\IDeletable.cs" />
+    <Compile Include="Core\IInsertable.cs" />
+    <Compile Include="Core\IUpdatable.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Files\FileManagerJson.cs" />
+    <Compile Include="Files\ISerializableJson.cs" />
+    <Compile Include="Output\OkruhZostavyEnum.cs" />
+    <Compile Include="Output\OkruhZostavyExtensions.cs" />
+    <Compile Include="Tables\TableRow.cs" />
+    <Compile Include="Tables\TableColumnAttribute.cs" />
+    <Compile Include="DatabaseUtilities.cs" />
+    <Compile Include="Enums\AnalytickaEvidencia.Enum.cs" />
+    <Compile Include="Enums\AssuViewAvailableColumns.Enum.cs" />
+    <Compile Include="Enums\AvailableConditions.Enum.cs" />
+    <Compile Include="Enums\AvailableFunctions.Enum.cs" />
+    <Compile Include="Columns\Column.cs" />
+    <Compile Include="Columns\AssuViewColumn.cs" />
+    <Compile Include="Conditions\Condition.cs" />
+    <Compile Include="Enums\ConditionOperator.Enum.cs" />
+    <Compile Include="Conditions\Equals.cs" />
+    <Compile Include="Conditions\GreaterThan.cs" />
+    <Compile Include="Conditions\Inlist.cs" />
+    <Compile Include="Conditions\LessThan.cs" />
+    <Compile Include="Enums\SumColumn.Enum.cs" />
+    <Compile Include="ExcelUtilities.cs" />
+    <Compile Include="Exceptions\CouldntCreateDirectoryException.cs" />
+    <Compile Include="Exceptions\InvalidWorksheetException.cs" />
+    <Compile Include="Files\CommandsManagerJson.cs" />
+    <Compile Include="Files\ConditionsManagerJson.cs" />
+    <Compile Include="Files\HlavickyManagerJson.cs" />
+    <Compile Include="Files\ZostavyManagerJson.cs" />
+    <Compile Include="Files\FilesManager.cs" />
+    <Compile Include="Input\DBFDataColumnAttribute.cs" />
+    <Compile Include="Input\ExcelDataColumnAttribute.cs" />
+    <Compile Include="Classifiers\KrajeManager.cs" />
+    <Compile Include="Classifiers\ObceManager.cs" />
+    <Compile Include="Classifiers\OkresyManager.cs" />
+    <Compile Include="Classifiers\OrganizacieManager.cs" />
+    <Compile Include="Output\HlavickaData.cs" />
+    <Compile Include="Output\HlavickaType.Enum.cs" />
+    <Compile Include="Output\OkruhZostavy.cs" />
+    <Compile Include="Output\OutputManager.cs" />
+    <Compile Include="Output\SelectCommandExtensions.cs" />
+    <Compile Include="Output\ZostavaDataColumn.cs" />
+    <Compile Include="Output\ZostavaDataRow.cs" />
+    <Compile Include="Output\ZostavaRowType.Enum.cs" />
+    <Compile Include="Output\ZostavyConverter.cs" />
+    <Compile Include="Classifiers\PodriadenostManager.cs" />
+    <Compile Include="Classifiers\SegmentyManager.cs" />
+    <Compile Include="StringUtilities.cs" />
+    <Compile Include="Classifiers\StupneManager.cs" />
+    <Compile Include="Tables\AnalytickaEvidenciaRiadok.cs" />
+    <Compile Include="Tables\CiselnikRiadok.cs" />
+    <Compile Include="Tables\DataTableObce.cs" />
+    <Compile Include="Tables\DataTableOthers.cs" />
+    <Compile Include="Tables\EkonomickaRiadok.cs" />
+    <Compile Include="Tables\EkonomickaRiadok1.cs" />
+    <Compile Include="Tables\EkonomickaRiadok2.cs" />
+    <Compile Include="Tables\EkonomickaRiadok3.cs" />
+    <Compile Include="Tables\EkonomickaRiadok6.cs" />
+    <Compile Include="Tables\FunkcnaRiadok.cs" />
+    <Compile Include="Tables\FunkcnaRiadok2.cs" />
+    <Compile Include="Tables\FunkcnaRiadok3.cs" />
+    <Compile Include="Tables\FunkcnaRiadok4.cs" />
+    <Compile Include="Tables\FunkcnaRiadok5.cs" />
+    <Compile Include="Classifiers\AnalytickaEvidenciaManager.cs" />
+    <Compile Include="Tables\KrajRiadok.cs" />
+    <Compile Include="Tables\LogMessage.cs" />
+    <Compile Include="Tables\ObecRiadok.cs" />
+    <Compile Include="Tables\OkresRiadok.cs" />
+    <Compile Include="Tables\OrganizaciaRiadok.cs" />
+    <Compile Include="Tables\PodriadenostRiadok.cs" />
+    <Compile Include="Tables\ProgramRiadok.cs" />
+    <Compile Include="Tables\ProgramRiadok3.cs" />
+    <Compile Include="Tables\ProgramRiadok5.cs" />
+    <Compile Include="Tables\ProgramRiadok7.cs" />
+    <Compile Include="Tables\SegmentRiadok.cs" />
+    <Compile Include="Tables\Stats.cs" />
+    <Compile Include="Tables\StatsData.cs" />
+    <Compile Include="Tables\StupenRiadok.cs" />
+    <Compile Include="Tables\TransferRiadok.cs" />
+    <Compile Include="Tables\UcetRiadok.cs" />
+    <Compile Include="Tables\ZdrojRiadok.cs" />
+    <Compile Include="Tables\ZdrojRiadok1.cs" />
+    <Compile Include="Tables\ZdrojRiadok2.cs" />
+    <Compile Include="Tables\ZdrojRiadok3.cs" />
+    <Compile Include="Tables\ZdrojRiadok4.cs" />
+    <Compile Include="Core\DataManager.cs" />
+    <Compile Include="Functions\Function.cs" />
+    <Compile Include="Functions\ConditionalSum.cs" />
+    <Compile Include="Functions\Count.cs" />
+    <Compile Include="Functions\Max.cs" />
+    <Compile Include="Functions\Min.cs" />
+    <Compile Include="Functions\Round.cs" />
+    <Compile Include="Functions\Substring.cs" />
+    <Compile Include="Functions\Sum.cs" />
+    <Compile Include="Input\InputDataRow.cs" />
+    <Compile Include="ISEFDataManager.cs" />
+    <Compile Include="Exceptions\DataAlreadyExistsException.cs" />
+    <Compile Include="Input\IInputDataRow.cs" />
+    <Compile Include="Input\ObceDataManager.cs" />
+    <Compile Include="Input\ObceDataRow.cs" />
+    <Compile Include="Input\OthersDataRow.cs" />
+    <Compile Include="Input\OthersDataManager.cs" />
+    <Compile Include="Core\LogManager.cs" />
+    <Compile Include="Enums\LogMessageType.Enum.cs" />
+    <Compile Include="Core\MSSQLDataManager.cs" />
+    <Compile Include="Core\MSSQLServer.cs" />
+    <Compile Include="Enums\InputType.Enum.cs" />
+    <Compile Include="Enums\OthersInputType.Enum.cs" />
+    <Compile Include="Output\DatovyRiadok.cs" />
+    <Compile Include="Output\ExportManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Output\SelectCommand.cs" />
+    <Compile Include="Core\StatsManager.cs" />
+    <Compile Include="Classifiers\UctyManager.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Views\AssuView.cs" />
+    <Compile Include="Views\EkonomickaView.cs" />
+    <Compile Include="Views\FunkcnaView.cs" />
+    <Compile Include="Views\ObceView.cs" />
+    <Compile Include="Views\OrganizaciaView.cs" />
+    <Compile Include="Views\OstatneView.cs" />
+    <Compile Include="Views\ProgramView.cs" />
+    <Compile Include="Views\StatsView.cs" />
+    <Compile Include="Classifiers\TransfersManager.cs" />
+    <Compile Include="Views\ZdrojView.cs" />
+    <Compile Include="Output\Zostava.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Output\Hlavicka.cs" />
+    <EmbeddedResource Include="Hlavicky\hlpgalloro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlptalloro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallfkorot.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallfkorotst.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallofkrot.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallofkrotst.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallofkt.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallofktst.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallorofkt.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallorofktst.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallorot.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlvallorotst.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltallfkoro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltallofk.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltallofkro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltalloro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltallorofk.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltcelfkoro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltcelofk.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltcelofkro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltceloro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hltcelorofk.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlpnalloro.xlsx" />
+    <EmbeddedResource Include="Hlavicky\hlppalloro.xlsx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

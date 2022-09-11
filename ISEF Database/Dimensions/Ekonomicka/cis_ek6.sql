@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[cis_ek6](
+	[Rok] [int] NOT NULL,
+	[Kod] [char](6) NOT NULL,
+	[Ek3] [char](3) NOT NULL,
+	[Nazov] [nvarchar](150) NOT NULL,
+	[Popis] [nvarchar](max) NOT NULL
+PRIMARY KEY CLUSTERED 
+(
+	[Rok] ASC,
+	[Kod] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+	CONSTRAINT [FK_cis_ek6_ek3] FOREIGN KEY (Rok, Ek3) REFERENCES [dbo].[cis_ek3]([Rok], [Kod])
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]

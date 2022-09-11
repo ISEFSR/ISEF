@@ -1,0 +1,93 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="cvti.isef.winformapp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISEF_TEST</Value>
+    </Setting>
+    <Setting Name="OutputDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">./Output/</Value>
+    </Setting>
+    <Setting Name="DataDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">./Data/</Value>
+    </Setting>
+    <Setting Name="HlavickyDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">./Hlavicky/</Value>
+    </Setting>
+    <Setting Name="DatabaseLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DatabasePassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ServerAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(LocalDb)\MSSQLLocalDB</Value>
+    </Setting>
+    <Setting Name="ServerNamePassLogin" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShouldInitialize" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FileObceBA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31777007</Value>
+    </Setting>
+    <Setting Name="FileObceTT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31777091</Value>
+    </Setting>
+    <Setting Name="FileObceTN" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31777252</Value>
+    </Setting>
+    <Setting Name="FileObceZA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31777350</Value>
+    </Setting>
+    <Setting Name="FileObceBB" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31777473</Value>
+    </Setting>
+    <Setting Name="FileObcePR" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31777619</Value>
+    </Setting>
+    <Setting Name="FileObceKE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31777759</Value>
+    </Setting>
+    <Setting Name="FileObceNR" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31777171</Value>
+    </Setting>
+    <Setting Name="FileVVS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FileVUCRO" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FileVUCPO" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FileMVRO" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FileMVPO" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FilePROPO" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FilePRORO" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LocalDB" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=ISEF_TEST;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=ISEF_TEST;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="ISEFDB" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=172.17.1.63\SQLEXPRESS;Initial Catalog=ISEF_TEST;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=172.17.1.63\SQLEXPRESS;Initial Catalog=ISEF_TEST;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

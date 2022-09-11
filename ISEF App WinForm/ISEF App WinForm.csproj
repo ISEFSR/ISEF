@@ -1,0 +1,1654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DFEE906D-5C5C-476F-AA1B-B3D2AA148BDC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cvti.isef.winformapp</RootNamespace>
+    <AssemblyName>ISEF</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Restart|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Restart\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Development|AnyCPU'">
+    <OutputPath>bin\Development\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Dev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Reset|AnyCPU'">
+    <OutputPath>bin\Reset\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugReset|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugReset\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.2.0\lib\net45\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\CueTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CueTextBox.Designer.cs">
+      <DependentUpon>CueTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\HlavickyListBox.cs" />
+    <Compile Include="Components\HlavickyListBox.Designer.cs">
+      <DependentUpon>HlavickyListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFButton.Designer.cs">
+      <DependentUpon>ISEFButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFCheckBox.Designer.cs">
+      <DependentUpon>ISEFCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFComboBox.Designer.cs">
+      <DependentUpon>ISEFComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFDataGridView.Designer.cs">
+      <DependentUpon>ISEFDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFLabel.Designer.cs">
+      <DependentUpon>ISEFLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFLabelTitleBig.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFLabelTitleBig.Designer.cs">
+      <DependentUpon>ISEFLabelTitleBig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFLabelTitleSmall.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFLabelTitleSmall.Designer.cs">
+      <DependentUpon>ISEFLabelTitleSmall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFListBox.Designer.cs">
+      <DependentUpon>ISEFListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFListView.Designer.cs">
+      <DependentUpon>ISEFListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ISEFTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ISEFTabControl.Designer.cs">
+      <DependentUpon>ISEFTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ZostavyListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ZostavyListBox.Designer.cs">
+      <DependentUpon>ZostavyListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Export\ExportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Export\ExportControl.Designer.cs">
+      <DependentUpon>ExportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Export\ExportControlStep1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Export\ExportControlStep1.Designer.cs">
+      <DependentUpon>ExportControlStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Export\ExportControlStep2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Export\ExportControlStep2.Designer.cs">
+      <DependentUpon>ExportControlStep2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Export\ExportControlStep3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Export\ExportControlStep3.Designer.cs">
+      <DependentUpon>ExportControlStep3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Import\DBFImportFile.cs" />
+    <Compile Include="Controls\Import\ExcelImportFile.cs" />
+    <Compile Include="Controls\Import\ImportChooseExcelFiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Import\ImportChooseExcelFiles.Designer.cs">
+      <DependentUpon>ImportChooseExcelFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Import\ImportRequiredOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Import\ImportRequiredOptions.Designer.cs">
+      <DependentUpon>ImportRequiredOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Import\ImportShowProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Import\ImportShowProgress.Designer.cs">
+      <DependentUpon>ImportShowProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\CiselnikyUtilities.cs" />
+    <Compile Include="Controls\Main\Ciselniky\ICiselnikControl.cs" />
+    <Compile Include="Controls\Main\Ciselniky\KrajControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\KrajControl.Designer.cs">
+      <DependentUpon>KrajControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewObecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewObecForm.Designer.cs">
+      <DependentUpon>NewObecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewPodriadenostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewPodriadenostForm.Designer.cs">
+      <DependentUpon>NewPodriadenostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewUcetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewUcetForm.Designer.cs">
+      <DependentUpon>NewUcetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\ObecControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\ObecControl.Designer.cs">
+      <DependentUpon>ObecControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\OkresControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\OkresControl.Designer.cs">
+      <DependentUpon>OkresControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\PodriadenostControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\PodriadenostControl.Designer.cs">
+      <DependentUpon>PodriadenostControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\StupneControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\StupneControl.Designer.cs">
+      <DependentUpon>StupneControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\TransferControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\TransferControl.Designer.cs">
+      <DependentUpon>TransferControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\UcetControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\UcetControl.Designer.cs">
+      <DependentUpon>UcetControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\ActionPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\ActionPreview.Designer.cs">
+      <DependentUpon>ActionPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\DashboardBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\DashboardBase.Designer.cs">
+      <DependentUpon>DashboardBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Import\IImportStep.cs" />
+    <Compile Include="Controls\Import\ImportChooseDBFFiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Import\ImportChooseDBFFiles.Designer.cs">
+      <DependentUpon>ImportChooseDBFFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Import\ImportChooseExcelFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Import\ImportChooseExcelFile.Designer.cs">
+      <DependentUpon>ImportChooseExcelFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\GeoMapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\GeoMapControl.Designer.cs">
+      <DependentUpon>GeoMapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\IYearDependant.cs" />
+    <Compile Include="Controls\Main\Dashboard\SingleTransferControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\SingleTransferControl.Designer.cs">
+      <DependentUpon>SingleTransferControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\SingleWarning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\SingleWarning.Designer.cs">
+      <DependentUpon>SingleWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\SingleWarningItem.cs" />
+    <Compile Include="Controls\Main\Dashboard\SingleYearControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\SingleYearControl.Designer.cs">
+      <DependentUpon>SingleYearControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\StupenPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\StupenPreviewControl.Designer.cs">
+      <DependentUpon>StupenPreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\TextsChangedEventArgs.cs" />
+    <Compile Include="Controls\Main\Dashboard\TransfersPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\TransfersPreview.Designer.cs">
+      <DependentUpon>TransfersPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\WarningPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\WarningPanel.Designer.cs">
+      <DependentUpon>WarningPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\WelcomeBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\WelcomeBoard.Designer.cs">
+      <DependentUpon>WelcomeBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\WelcomeBoardItem.cs" />
+    <Compile Include="Controls\Main\Dashboard\YearsPreviewPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\YearsPreviewPanel.Designer.cs">
+      <DependentUpon>YearsPreviewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Data\ColumnTileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Data\ColumnTileControl.Designer.cs">
+      <DependentUpon>ColumnTileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Data\SelectCommandControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Data\SelectCommandControl.Designer.cs">
+      <DependentUpon>SelectCommandControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\Conditios\ConditionType.Enum.cs" />
+    <Compile Include="Controls\Main\Generator\Conditios\UniversalConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\Conditios\UniversalConditionControl.Designer.cs">
+      <DependentUpon>UniversalConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\HlavickyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\HlavickyControl.Designer.cs">
+      <DependentUpon>HlavickyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Hlavicky\HlavickaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Hlavicky\HlavickaControl.Designer.cs">
+      <DependentUpon>HlavickaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\NovaZostavaFinalStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\NovaZostavaFinalStep.Designer.cs">
+      <DependentUpon>NovaZostavaFinalStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\NovaZostavaFirstStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\NovaZostavaFirstStep.Designer.cs">
+      <DependentUpon>NovaZostavaFirstStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\NovaZostavaSecondStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\NovaZostavaSecondStep.Designer.cs">
+      <DependentUpon>NovaZostavaSecondStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\NovaZostavaThirdStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\NovaZostavaThirdStep.Designer.cs">
+      <DependentUpon>NovaZostavaThirdStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\ZostavaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\ZostavaControl.Designer.cs">
+      <DependentUpon>ZostavaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\ZostavyPrehladControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\ZostavyPrehladControl.Designer.cs">
+      <DependentUpon>ZostavyPrehladControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\ZostavaOutputControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Zostavy\ZostavaOutputControl.Designer.cs">
+      <DependentUpon>ZostavaOutputControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Setup\ApplicationSetupControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Setup\ApplicationSetupControl1.Designer.cs">
+      <DependentUpon>ApplicationSetupControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Setup\ApplicationSetupControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Setup\ApplicationSetupControl2.Designer.cs">
+      <DependentUpon>ApplicationSetupControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Setup\ApplicationSetupControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Setup\ApplicationSetupControl3.Designer.cs">
+      <DependentUpon>ApplicationSetupControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Setup\ApplicationSetupControl4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Setup\ApplicationSetupControl4.Designer.cs">
+      <DependentUpon>ApplicationSetupControl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\AktualizujCiselnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\AktualizujCiselnikForm.Designer.cs">
+      <DependentUpon>AktualizujCiselnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ApplicationSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationSetupForm.Designer.cs">
+      <DependentUpon>ApplicationSetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewOkresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewOkresForm.Designer.cs">
+      <DependentUpon>NewOkresForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conditions\ChooseConditionOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conditions\ChooseConditionOperator.Designer.cs">
+      <DependentUpon>ChooseConditionOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewKrajForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewKrajForm.Designer.cs">
+      <DependentUpon>NewKrajForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewStupenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NewStupenForm.Designer.cs">
+      <DependentUpon>NewStupenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\SpecifyEkonomickaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\SpecifyEkonomickaForm.Designer.cs">
+      <DependentUpon>SpecifyEkonomickaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\SpecifyFunkcnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\SpecifyFunkcnaForm.Designer.cs">
+      <DependentUpon>SpecifyFunkcnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\SpecifyProgramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\SpecifyProgramForm.Designer.cs">
+      <DependentUpon>SpecifyProgramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\SpecifyZdrojForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\SpecifyZdrojForm.Designer.cs">
+      <DependentUpon>SpecifyZdrojForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Commands\ComandNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Commands\ComandNameForm.Designer.cs">
+      <DependentUpon>ComandNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Commands\ChooseCommandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Commands\ChooseCommandForm.Designer.cs">
+      <DependentUpon>ChooseCommandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Commands\ImportCommandsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Commands\ImportCommandsForm.Designer.cs">
+      <DependentUpon>ImportCommandsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Commands\NewConditionalSumFunctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Commands\NewConditionalSumFunctionForm.Designer.cs">
+      <DependentUpon>NewConditionalSumFunctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Commands\NewRoundFunctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Commands\NewRoundFunctionForm.Designer.cs">
+      <DependentUpon>NewRoundFunctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Commands\NewSubstringFunctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Commands\NewSubstringFunctionForm.Designer.cs">
+      <DependentUpon>NewSubstringFunctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Commands\SaveCommandAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Commands\SaveCommandAsForm.Designer.cs">
+      <DependentUpon>SaveCommandAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conditions\ChooseConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conditions\ChooseConditionForm.Designer.cs">
+      <DependentUpon>ChooseConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conditions\ImportConditionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conditions\ImportConditionsForm.Designer.cs">
+      <DependentUpon>ImportConditionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conditions\CreateConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conditions\CreateConditionForm.Designer.cs">
+      <DependentUpon>CreateConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard\PreviewMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard\PreviewMapForm.Designer.cs">
+      <DependentUpon>PreviewMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard\ZmenTextaciuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard\ZmenTextaciuForm.Designer.cs">
+      <DependentUpon>ZmenTextaciuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogBase.Designer.cs">
+      <DependentUpon>DialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogBase02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogBase02.Designer.cs">
+      <DependentUpon>DialogBase02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Hlavicky\ExportHlavickyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Hlavicky\ExportHlavickyForm.Designer.cs">
+      <DependentUpon>ExportHlavickyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ZobrazCommandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ZobrazCommandForm.Designer.cs">
+      <DependentUpon>ZobrazCommandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Zostavy\GenerovanieZostavForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Zostavy\GenerovanieZostavForm.Designer.cs">
+      <DependentUpon>GenerovanieZostavForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\GenerujCiselnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\GenerujCiselnikForm.Designer.cs">
+      <DependentUpon>GenerujCiselnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Import\SpecifyImportFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Import\SpecifyImportFile.Designer.cs">
+      <DependentUpon>SpecifyImportFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewColumnControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewColumnControl.Designer.cs">
+      <DependentUpon>NewColumnControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Hlavicky\NovaHlavickaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Hlavicky\NovaHlavickaForm.Designer.cs">
+      <DependentUpon>NovaHlavickaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NovaHodnotaCiselnikuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NovaHodnotaCiselnikuForm.Designer.cs">
+      <DependentUpon>NovaHodnotaCiselnikuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NovaOrganizaciaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\NovaOrganizaciaForm.Designer.cs">
+      <DependentUpon>NovaOrganizaciaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard\PreviewRokaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard\PreviewRokaForm.Designer.cs">
+      <DependentUpon>PreviewRokaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classifiers\PridajTransferovuPolozkuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classifiers\PridajTransferovuPolozkuForm.Designer.cs">
+      <DependentUpon>PridajTransferovuPolozkuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RemoveDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RemoveDataForm.Designer.cs">
+      <DependentUpon>RemoveDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conditions\SaveGeneratedCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conditions\SaveGeneratedCondition.Designer.cs">
+      <DependentUpon>SaveGeneratedCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Zostavy\ImportZostavyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Zostavy\ImportZostavyForm.Designer.cs">
+      <DependentUpon>ImportZostavyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Helpers\ColorPallete.cs" />
+    <Compile Include="Helpers\HelpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\HelpControl.Designer.cs">
+      <DependentUpon>HelpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\HelpTileInfo.cs" />
+    <Compile Include="Controls\Import\ImportDataStupen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Import\ImportDataStupen.Designer.cs">
+      <DependentUpon>ImportDataStupen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Import\ImportDataMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Import\ImportDataMain.Designer.cs">
+      <DependentUpon>ImportDataMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InitializationReport.cs" />
+    <Compile Include="Controls\Main\CiselnikyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\CiselnikyControl.Designer.cs">
+      <DependentUpon>CiselnikyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\EkonomickaKlasifikaciaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\EkonomickaKlasifikaciaControl.Designer.cs">
+      <DependentUpon>EkonomickaKlasifikaciaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\FunkcnaKlasifikaciaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\FunkcnaKlasifikaciaControl.Designer.cs">
+      <DependentUpon>FunkcnaKlasifikaciaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\OrganizacieControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\OrganizacieControl.Designer.cs">
+      <DependentUpon>OrganizacieControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\ProgramovaKlasifikacia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\ProgramovaKlasifikacia.Designer.cs">
+      <DependentUpon>ProgramovaKlasifikacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\SegmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\SegmentControl.Designer.cs">
+      <DependentUpon>SegmentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\ZdrojovaKlasifikaciaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Ciselniky\ZdrojovaKlasifikaciaControl.Designer.cs">
+      <DependentUpon>ZdrojovaKlasifikaciaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ErrorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ErrorControl.Designer.cs">
+      <DependentUpon>ErrorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\DashboardControl.Designer.cs">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\ActionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\ActionControl.Designer.cs">
+      <DependentUpon>ActionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\ActionsPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\ActionsPreviewControl.Designer.cs">
+      <DependentUpon>ActionsPreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\DashbardTilePreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\DashbardTilePreviewControl.Designer.cs">
+      <DependentUpon>DashbardTilePreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\DashboardTileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\DashboardTileControl.Designer.cs">
+      <DependentUpon>DashboardTileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\DataPreviewTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\DataPreviewTile.Designer.cs">
+      <DependentUpon>DataPreviewTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Dashboard\IDashboardActivableTile.cs" />
+    <Compile Include="Controls\Main\DataPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\DataPreviewControl.Designer.cs">
+      <DependentUpon>DataPreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Data\ColumnsSelectorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Data\ColumnsSelectorControl.Designer.cs">
+      <DependentUpon>ColumnsSelectorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\GeneratorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\GeneratorControl.Designer.cs">
+      <DependentUpon>GeneratorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\CommandsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\CommandsControl.Designer.cs">
+      <DependentUpon>CommandsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\Commands\SelectedCommandControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\Commands\SelectedCommandControl.Designer.cs">
+      <DependentUpon>SelectedCommandControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\ConditionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\ConditionsControl.Designer.cs">
+      <DependentUpon>ConditionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\Conditios\SelectedConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\Generator\Conditios\SelectedConditionControl.Designer.cs">
+      <DependentUpon>SelectedConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\IMainTabControl.cs" />
+    <Compile Include="Helpers\TileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\TileControl.Designer.cs">
+      <DependentUpon>TileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\UserControlWithNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\UserControlWithNotification.Designer.cs">
+      <DependentUpon>UserControlWithNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\VerticalProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\VerticalProgress.Designer.cs">
+      <DependentUpon>VerticalProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\VerticalStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\VerticalStep.Designer.cs">
+      <DependentUpon>VerticalStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Main\ZostavyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Main\ZostavyControl.Designer.cs">
+      <DependentUpon>ZostavyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InitializationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InitializationControl.Designer.cs">
+      <DependentUpon>InitializationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MainControl.Designer.cs">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Commands\NewCommandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Commands\NewCommandForm.Designer.cs">
+      <DependentUpon>NewCommandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conditions\SaveConditionAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conditions\SaveConditionAsForm.Designer.cs">
+      <DependentUpon>SaveConditionAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conditions\NewConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conditions\NewConditionForm.Designer.cs">
+      <DependentUpon>NewConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataForm.Designer.cs">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImportDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImportDataForm.Designer.cs">
+      <DependentUpon>ImportDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MainDataControl.Designer.cs">
+      <DependentUpon>MainDataControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Zostavy\NovaZostavaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Zostavy\NovaZostavaForm.Designer.cs">
+      <DependentUpon>NovaZostavaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ExcelUtilities.cs" />
+    <Compile Include="Forms\WorkingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkingForm.Designer.cs">
+      <DependentUpon>WorkingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IActivable.cs" />
+    <Compile Include="IDataManagerDependant.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\ControlUtilities.cs" />
+    <Compile Include="Helpers\ScintillaUtilities.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Components\HlavickyListBox.resx">
+      <DependentUpon>HlavickyListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ISEFButton.resx">
+      <DependentUpon>ISEFButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ISEFDataGridView.resx">
+      <DependentUpon>ISEFDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ISEFLabel.resx">
+      <DependentUpon>ISEFLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ISEFLabelTitleBig.resx">
+      <DependentUpon>ISEFLabelTitleBig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ISEFLabelTitleSmall.resx">
+      <DependentUpon>ISEFLabelTitleSmall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Export\ExportControl.resx">
+      <DependentUpon>ExportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Export\ExportControlStep1.resx">
+      <DependentUpon>ExportControlStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Export\ExportControlStep2.resx">
+      <DependentUpon>ExportControlStep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Export\ExportControlStep3.resx">
+      <DependentUpon>ExportControlStep3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Import\ImportChooseExcelFiles.resx">
+      <DependentUpon>ImportChooseExcelFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Import\ImportRequiredOptions.resx">
+      <DependentUpon>ImportRequiredOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Import\ImportShowProgress.resx">
+      <DependentUpon>ImportShowProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\KrajControl.resx">
+      <DependentUpon>KrajControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\ObecControl.resx">
+      <DependentUpon>ObecControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\OkresControl.resx">
+      <DependentUpon>OkresControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\PodriadenostControl.resx">
+      <DependentUpon>PodriadenostControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\SegmentControl.resx">
+      <DependentUpon>SegmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\StupneControl.resx">
+      <DependentUpon>StupneControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\TransferControl.resx">
+      <DependentUpon>TransferControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\UcetControl.resx">
+      <DependentUpon>UcetControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\ActionPreview.resx">
+      <DependentUpon>ActionPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\DashboardBase.resx">
+      <DependentUpon>DashboardBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Import\ImportChooseDBFFiles.resx">
+      <DependentUpon>ImportChooseDBFFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Import\ImportChooseExcelFile.resx">
+      <DependentUpon>ImportChooseExcelFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\GeoMapControl.resx">
+      <DependentUpon>GeoMapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\SingleTransferControl.resx">
+      <DependentUpon>SingleTransferControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\SingleWarning.resx">
+      <DependentUpon>SingleWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\SingleYearControl.resx">
+      <DependentUpon>SingleYearControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\StupenPreviewControl.resx">
+      <DependentUpon>StupenPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\TransfersPreview.resx">
+      <DependentUpon>TransfersPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\WarningPanel.resx">
+      <DependentUpon>WarningPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\WelcomeBoard.resx">
+      <DependentUpon>WelcomeBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\YearsPreviewPanel.resx">
+      <DependentUpon>YearsPreviewPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Data\ColumnTileControl.resx">
+      <DependentUpon>ColumnTileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Data\SelectCommandControl.resx">
+      <DependentUpon>SelectCommandControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Generator\Conditios\UniversalConditionControl.resx">
+      <DependentUpon>UniversalConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\HlavickyControl.resx">
+      <DependentUpon>HlavickyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Hlavicky\HlavickaControl.resx">
+      <DependentUpon>HlavickaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Zostavy\NovaZostavaFinalStep.resx">
+      <DependentUpon>NovaZostavaFinalStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Zostavy\NovaZostavaFirstStep.resx">
+      <DependentUpon>NovaZostavaFirstStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Zostavy\NovaZostavaSecondStep.resx">
+      <DependentUpon>NovaZostavaSecondStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Zostavy\NovaZostavaThirdStep.resx">
+      <DependentUpon>NovaZostavaThirdStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Zostavy\ZostavaControl.resx">
+      <DependentUpon>ZostavaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Zostavy\ZostavyPrehladControl.resx">
+      <DependentUpon>ZostavyPrehladControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Zostavy\ZostavaOutputControl.resx">
+      <DependentUpon>ZostavaOutputControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Setup\ApplicationSetupControl1.resx">
+      <DependentUpon>ApplicationSetupControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Setup\ApplicationSetupControl2.resx">
+      <DependentUpon>ApplicationSetupControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Setup\ApplicationSetupControl3.resx">
+      <DependentUpon>ApplicationSetupControl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Setup\ApplicationSetupControl4.resx">
+      <DependentUpon>ApplicationSetupControl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\AktualizujCiselnikForm.resx">
+      <DependentUpon>AktualizujCiselnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApplicationSetupForm.resx">
+      <DependentUpon>ApplicationSetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\NewObecForm.resx">
+      <DependentUpon>NewObecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\NewOkresForm.resx">
+      <DependentUpon>NewOkresForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Conditions\ChooseConditionOperator.resx">
+      <DependentUpon>ChooseConditionOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\NewKrajForm.resx">
+      <DependentUpon>NewKrajForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\NewStupenForm.resx">
+      <DependentUpon>NewStupenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\SpecifyEkonomickaForm.resx">
+      <DependentUpon>SpecifyEkonomickaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\SpecifyFunkcnaForm.resx">
+      <DependentUpon>SpecifyFunkcnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\SpecifyProgramForm.resx">
+      <DependentUpon>SpecifyProgramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\SpecifyZdrojForm.resx">
+      <DependentUpon>SpecifyZdrojForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Commands\ComandNameForm.resx">
+      <DependentUpon>ComandNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Commands\ChooseCommandForm.resx">
+      <DependentUpon>ChooseCommandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Commands\ImportCommandsForm.resx">
+      <DependentUpon>ImportCommandsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Commands\NewConditionalSumFunctionForm.resx">
+      <DependentUpon>NewConditionalSumFunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Commands\NewRoundFunctionForm.resx">
+      <DependentUpon>NewRoundFunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Commands\NewSubstringFunctionForm.resx">
+      <DependentUpon>NewSubstringFunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Commands\SaveCommandAsForm.resx">
+      <DependentUpon>SaveCommandAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Conditions\ChooseConditionForm.resx">
+      <DependentUpon>ChooseConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Conditions\SaveConditionAsForm.resx">
+      <DependentUpon>SaveConditionAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Conditions\ImportConditionsForm.resx">
+      <DependentUpon>ImportConditionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Conditions\CreateConditionForm.resx">
+      <DependentUpon>CreateConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard\PreviewMapForm.resx">
+      <DependentUpon>PreviewMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard\ZmenTextaciuForm.resx">
+      <DependentUpon>ZmenTextaciuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogBase.resx">
+      <DependentUpon>DialogBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogBase02.resx">
+      <DependentUpon>DialogBase02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hlavicky\ExportHlavickyForm.resx">
+      <DependentUpon>ExportHlavickyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ZobrazCommandForm.resx">
+      <DependentUpon>ZobrazCommandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Zostavy\GenerovanieZostavForm.resx">
+      <DependentUpon>GenerovanieZostavForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\GenerujCiselnikForm.resx">
+      <DependentUpon>GenerujCiselnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Import\SpecifyImportFile.resx">
+      <DependentUpon>SpecifyImportFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewColumnControl.resx">
+      <DependentUpon>NewColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hlavicky\NovaHlavickaForm.resx">
+      <DependentUpon>NovaHlavickaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\NovaHodnotaCiselnikuForm.resx">
+      <DependentUpon>NovaHodnotaCiselnikuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\NovaOrganizaciaForm.resx">
+      <DependentUpon>NovaOrganizaciaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard\PreviewRokaForm.resx">
+      <DependentUpon>PreviewRokaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classifiers\PridajTransferovuPolozkuForm.resx">
+      <DependentUpon>PridajTransferovuPolozkuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RemoveDataForm.resx">
+      <DependentUpon>RemoveDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Conditions\SaveGeneratedCondition.resx">
+      <DependentUpon>SaveGeneratedCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\HelpControl.resx">
+      <DependentUpon>HelpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Import\ImportDataStupen.resx">
+      <DependentUpon>ImportDataStupen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Import\ImportDataMain.resx">
+      <DependentUpon>ImportDataMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InitializationControl.resx">
+      <DependentUpon>InitializationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\CiselnikyControl.resx">
+      <DependentUpon>CiselnikyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\EkonomickaKlasifikaciaControl.resx">
+      <DependentUpon>EkonomickaKlasifikaciaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\FunkcnaKlasifikaciaControl.resx">
+      <DependentUpon>FunkcnaKlasifikaciaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\OrganizacieControl.resx">
+      <DependentUpon>OrganizacieControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\ProgramovaKlasifikacia.resx">
+      <DependentUpon>ProgramovaKlasifikacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Ciselniky\ZdrojovaKlasifikaciaControl.resx">
+      <DependentUpon>ZdrojovaKlasifikaciaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ErrorControl.resx">
+      <DependentUpon>ErrorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\DashboardControl.resx">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\ActionControl.resx">
+      <DependentUpon>ActionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\ActionsPreviewControl.resx">
+      <DependentUpon>ActionsPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\DashbardTilePreviewControl.resx">
+      <DependentUpon>DashbardTilePreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\DashboardTileControl.resx">
+      <DependentUpon>DashboardTileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MainControl.resx">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Dashboard\DataPreviewTile.resx">
+      <DependentUpon>DataPreviewTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\DataPreviewControl.resx">
+      <DependentUpon>DataPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Data\ColumnsSelectorControl.resx">
+      <DependentUpon>ColumnsSelectorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\GeneratorControl.resx">
+      <DependentUpon>GeneratorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Generator\CommandsControl.resx">
+      <DependentUpon>CommandsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Generator\Commands\SelectedCommandControl.resx">
+      <DependentUpon>SelectedCommandControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Generator\ConditionsControl.resx">
+      <DependentUpon>ConditionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\Generator\Conditios\SelectedConditionControl.resx">
+      <DependentUpon>SelectedConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\TileControl.resx">
+      <DependentUpon>TileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\UserControlWithNotification.resx">
+      <DependentUpon>UserControlWithNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\VerticalProgress.resx">
+      <DependentUpon>VerticalProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\VerticalStep.resx">
+      <DependentUpon>VerticalStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Main\ZostavyControl.resx">
+      <DependentUpon>ZostavyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Commands\NewCommandForm.resx">
+      <DependentUpon>NewCommandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Conditions\NewConditionForm.resx">
+      <DependentUpon>NewConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataForm.resx">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImportDataForm.resx">
+      <DependentUpon>ImportDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MainDataControl.resx">
+      <DependentUpon>MainDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Zostavy\NovaZostavaForm.resx">
+      <DependentUpon>NovaZostavaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkingForm.resx">
+      <DependentUpon>WorkingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Data\commands.json">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\conditions.json">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\hlavicky.json" />
+    <None Include="Data\Hlavicky\hlpgallxxxt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlpnallxxxt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlppallxxxt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlptallxxxt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltallfkorot.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltallofkrot.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltallorofkt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltallxfkt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltallxxxt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltcelfkorot.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltcelofkrot.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltcelorofkt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltcelxfkt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hltcelxxxt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallfkorot.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallfkorotst.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallofkrot.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallofkrotst.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallorofkt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallorofktst.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallxfkt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallxfktst.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallxxxt.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvallxxxtst.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Hlavicky\hlvcelcst.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Data\zostavy.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\slovakia.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\warning_white_30.png" />
+    <None Include="Resources\dashboard_white_100.png" />
+    <None Include="Resources\data_white_100.png" />
+    <None Include="Resources\lookup_white_100.png" />
+    <None Include="Resources\sql_white_100.png" />
+    <None Include="Resources\excel_white_100.png" />
+    <None Include="Resources\report_white_100.png" />
+    <None Include="Resources\logo94.png" />
+    <None Include="Resources\nodata.png" />
+    <None Include="Resources\full20.png" />
+    <None Include="Resources\importjson50.png" />
+    <None Include="Resources\rozbory.png" />
+    <None Include="Resources\rocenka.png" />
+    <None Include="Resources\2015.jpg" />
+    <None Include="Resources\importtest.png" />
+    <None Include="Resources\ssaveas48.png" />
+    <None Include="Resources\minus48.png" />
+    <None Include="Resources\subtreremove.png" />
+    <None Include="Resources\discard48.png" />
+    <None Include="Resources\plus48.png" />
+    <None Include="Resources\subtreeadd.png" />
+    <None Include="Resources\folder48.png" />
+    <None Include="Resources\export64.png" />
+    <None Include="Resources\delete48.png" />
+    <None Include="Resources\saveas48.png" />
+    <None Include="Resources\save48.png" />
+    <None Include="Resources\condition___.png" />
+    <None Include="Resources\green35.png" />
+    <None Include="Resources\blue35.png" />
+    <None Include="Resources\red35.png" />
+    <None Include="Resources\excel50.png" />
+    <None Include="Resources\sql501.png" />
+    <None Include="Resources\refresh50.png" />
+    <None Include="Resources\filereload50.png" />
+    <None Include="Resources\validate50.png" />
+    <None Include="Resources\nenahranepolozky.png" />
+    <None Include="Resources\excel75_white.png" />
+    <None Include="Resources\icons8-data-transfer-96.png" />
+    <None Include="Resources\export50.png" />
+    <None Include="Resources\save501.png" />
+    <None Include="Resources\info48.png" />
+    <None Include="Resources\start1001.png" />
+    <None Include="Resources\start100.png" />
+    <None Include="Resources\ms100h.png" />
+    <None Include="Resources\ms100.png" />
+    <None Include="Resources\vuc100h.png" />
+    <None Include="Resources\vuc100.png" />
+    <None Include="Resources\mv100h.png" />
+    <None Include="Resources\mv100.png" />
+    <None Include="Resources\vvs100h.png" />
+    <None Include="Resources\vvs100.png" />
+    <None Include="Resources\mao100h.png" />
+    <None Include="Resources\mao100.png" />
+    <None Include="Resources\removedata100.png" />
+    <None Include="Resources\ok30.png" />
+    <None Include="Resources\ok500.png" />
+    <None Include="Resources\emptytest.png" />
+    <None Include="Resources\prazdne_zostavy.png" />
+    <None Include="Resources\welcome.png" />
+    <None Include="Resources\transfer48.png" />
+    <None Include="Resources\dataimport.png" />
+    <None Include="Resources\oecd.png" />
+    <None Include="Resources\info50.png" />
+    <None Include="Resources\sql50x.png" />
+    <None Include="Resources\sql50.png" />
+    <None Include="Resources\remove75.png" />
+    <None Include="Resources\update75.png" />
+    <None Include="Resources\excel1_35.png" />
+    <None Include="Resources\sql751.png" />
+    <None Include="Resources\report75.png" />
+    <None Include="Resources\sql75.png" />
+    <None Include="Resources\settings75.png" />
+    <None Include="Resources\import75.png" />
+    <None Include="Resources\db_import75.png" />
+    <None Include="Resources\clone32.png" />
+    <None Include="Resources\add_clmn64.png" />
+    <None Include="Resources\save50.png" />
+    <None Include="Resources\left52.png" />
+    <None Include="Resources\icons8-delete-file-48.png" />
+    <None Include="Resources\update48.png" />
+    <None Include="Resources\add48.png" />
+    <None Include="Resources\icons8-analyze-48.png" />
+    <None Include="Resources\reload48.png" />
+    <None Include="Resources\excel48.png" />
+    <None Include="Resources\warning50.png" />
+    <None Include="Resources\bracket30.png" />
+    <None Include="Resources\save30.png" />
+    <None Include="Resources\cancel30.png" />
+    <None Include="Resources\calendar40.png" />
+    <None Include="Resources\loading3.gif" />
+    <None Include="Resources\loading2.gif" />
+    <None Include="Resources\loading1.gif" />
+    <None Include="Resources\hamburger.png" />
+    <None Include="Resources\info96.png" />
+    <None Include="Resources\app_logo.png" />
+    <None Include="Resources\databackground.png" />
+    <None Include="Resources\between100.png" />
+    <None Include="Resources\between100h.png" />
+    <None Include="Resources\like100h.png" />
+    <None Include="Resources\like100.png" />
+    <None Include="Resources\in100h.png" />
+    <None Include="Resources\in100.png" />
+    <None Include="Resources\lt100h.png" />
+    <None Include="Resources\lt100.png" />
+    <None Include="Resources\gt100.png" />
+    <None Include="Resources\gt100h.png" />
+    <None Include="Resources\equals100h.png" />
+    <None Include="Resources\equals100.png" />
+    <None Include="Resources\cvti.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\import.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\json_import.png" />
+    <None Include="Resources\background.png" />
+    <None Include="Resources\banner3.png" />
+    <None Include="Resources\banner2.png" />
+    <None Include="Resources\banner1.png" />
+    <None Include="Resources\isefinit5.png" />
+    <None Include="Resources\isefinit4.png" />
+    <None Include="Resources\isefinit3.png" />
+    <None Include="Resources\isefinit2.png" />
+    <None Include="Resources\isefinit1.png" />
+    <None Include="Resources\settings50.png" />
+    <None Include="Resources\banner.png" />
+    <None Include="Resources\update50.png" />
+    <None Include="Resources\generate50.png" />
+    <None Include="Resources\fun30.png" />
+    <None Include="Resources\num30.png" />
+    <None Include="Resources\text301.png" />
+    <None Include="Resources\text30.png" />
+    <None Include="Resources\notfound140b.png" />
+    <None Include="Resources\notfound140.png" />
+    <None Include="Resources\action_blured.png" />
+    <None Include="Resources\magnifier100.png" />
+    <None Include="Resources\blured_action.png" />
+    <None Include="Resources\display20.png" />
+    <None Include="Resources\gear20.png" />
+    <None Include="Resources\error20.png" />
+    <None Include="Resources\info20.png" />
+    <None Include="Resources\pro.jpg" />
+    <None Include="Resources\mv.jpg" />
+    <None Include="Resources\vuc.jpg" />
+    <None Include="Resources\vvs.jpg" />
+    <None Include="Resources\mao1.jpg" />
+    <None Include="Resources\mao.jpg" />
+    <None Include="Resources\isefinit.png" />
+    <None Include="Resources\cvti_transparent.png" />
+    <None Include="Resources\logo-msr.png" />
+    <None Include="Resources\dbimport80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notfound200x115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Help\css\" />
+    <Folder Include="Help\images\" />
+    <Folder Include="Help\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data Processing Library\Data Processing Library.csproj">
+      <Project>{1481da3f-7086-4b06-9262-81d9ee68b011}</Project>
+      <Name>Data Processing Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

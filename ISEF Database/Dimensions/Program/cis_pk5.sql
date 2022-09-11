@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[cis_pk5](
+	[Rok] [int] NOT NULL,
+	[Kod] [char](5) NOT NULL,
+	[Pk3] [char](3) NOT NULL,
+	[Nazov] [nvarchar](150) NOT NULL,
+	[Popis] [nvarchar](max) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Rok] ASC,
+	[Kod] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+	CONSTRAINT [FK_cis_pk5_pk3] FOREIGN KEY (Rok, Pk3) REFERENCES [dbo].[cis_pk3]([Rok], [Kod])
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]

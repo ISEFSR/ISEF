@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>ISEF_Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{d12f7ca4-7865-4e3d-b26a-52d1bb748012}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>ISEF_Database</RootNamespace>
+    <AssemblyName>ISEF_Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <DacDescription>Core database for ISEF Application </DacDescription>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Restart|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Development|AnyCPU' ">
+    <OutputPath>bin\Development\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|AnyCPU' ">
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Dimensions" />
+    <Folder Include="Facts" />
+    <Folder Include="Views" />
+    <Folder Include="Procedures" />
+    <Folder Include="Functions" />
+    <Folder Include="Default" />
+    <Folder Include="Dimensions\Ekonomicka" />
+    <Folder Include="Dimensions\Funkcna" />
+    <Folder Include="Dimensions\Zdroj" />
+    <Folder Include="Dimensions\Program" />
+    <Folder Include="Dimensions\Organizacie" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Facts\ostatne.sql" />
+    <Build Include="Facts\mao.sql" />
+    <Build Include="Views\vi_assu.sql" />
+    <Build Include="Facts\log.sql" />
+    <Build Include="Facts\stats.sql" />
+    <Build Include="Views\vi_stats.sql" />
+    <Build Include="Dimensions\log_type.sql" />
+    <Build Include="Views\vi_obce.sql" />
+    <Build Include="Views\vi_ostatne.sql" />
+    <Build Include="Procedures\usp_UpdateCiselniky.sql" />
+    <Build Include="Views\vi_funkcna.sql" />
+    <Build Include="Views\vi_ekonomicka.sql" />
+    <Build Include="Views\vi_zdroj.sql" />
+    <Build Include="Views\vi_program.sql" />
+    <Build Include="Facts\transfer.sql" />
+    <Build Include="Procedures\usp_UpdateStats.sql" />
+    <Build Include="Procedures\usp_VyprazdniCiselniky.sql" />
+    <Build Include="Functions\ufn_GetStupenSummary.sql" />
+    <Build Include="Procedures\usp_OdstranDataPreRok.sql" />
+    <Build Include="Default\roc_pk.sql" />
+    <Build Include="Default\roc_fk.sql" />
+    <Build Include="Default\roc_ek.sql" />
+    <Build Include="Default\roc_zk.sql" />
+    <Build Include="Dimensions\Ekonomicka\cis_ek1.sql" />
+    <Build Include="Dimensions\Ekonomicka\cis_ek2.sql" />
+    <Build Include="Dimensions\Ekonomicka\cis_ek3.sql" />
+    <Build Include="Dimensions\Ekonomicka\cis_ek6.sql" />
+    <Build Include="Dimensions\Funkcna\cis_fk2.sql" />
+    <Build Include="Dimensions\Funkcna\cis_fk3.sql" />
+    <Build Include="Dimensions\Funkcna\cis_fk4.sql" />
+    <Build Include="Dimensions\Funkcna\cis_fk5.sql" />
+    <Build Include="Dimensions\Zdroj\cis_zk1.sql" />
+    <Build Include="Dimensions\Zdroj\cis_zk2.sql" />
+    <Build Include="Dimensions\Zdroj\cis_zk3.sql" />
+    <Build Include="Dimensions\Zdroj\cis_zk4.sql" />
+    <Build Include="Dimensions\Program\cis_pk7.sql" />
+    <Build Include="Dimensions\Program\cis_pk3.sql" />
+    <Build Include="Dimensions\Program\cis_pk5.sql" />
+    <Build Include="Dimensions\Organizacie\cis_kraj.sql" />
+    <Build Include="Dimensions\Organizacie\cis_okres.sql" />
+    <Build Include="Dimensions\Organizacie\cis_org.sql" />
+    <Build Include="Dimensions\Organizacie\cis_pod.sql" />
+    <Build Include="Dimensions\Organizacie\cis_segment.sql" />
+    <Build Include="Dimensions\Organizacie\cis_stupen.sql" />
+    <Build Include="Default\roc_transfer.sql" />
+    <Build Include="Dimensions\Organizacie\cis_obec.sql" />
+    <Build Include="Views\vi_organizacie.sql" />
+    <Build Include="Dimensions\cis_ucet.sql" />
+    <Build Include="Procedures\usp_UpdateCiselnikyFromYear.sql" />
+    <Build Include="Procedures\usp_UpdateEkonomickaFromYear.sql" />
+    <Build Include="Procedures\usp_UpdateFunkcnaFromYear.sql" />
+    <Build Include="Procedures\usp_UpdateZdrojFromYear.sql" />
+    <Build Include="Procedures\usp_UpdateProgramFromYear.sql" />
+    <Build Include="Procedures\usp_UpdateFunkcna.sql" />
+    <Build Include="Procedures\usp_UpdateEkonomicka.sql" />
+    <Build Include="Procedures\usp_UpdateZdroj.sql" />
+    <Build Include="Procedures\usp_UpdateProgram.sql" />
+    <Build Include="Dimensions\cis_sknace.sql" />
+    <Build Include="Dimensions\Zdroj\cis_kodzk.sql" />
+    <Build Include="Procedures\usp_GenerateFunkcna.sql" />
+    <Build Include="Procedures\usp_GenerateEkonomicka.sql" />
+    <Build Include="Procedures\usp_GenerateZdroj.sql" />
+    <Build Include="Procedures\usp_GenerateProgram.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="postDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="ISEF Database.refactorlog" />
+  </ItemGroup>
+</Project>

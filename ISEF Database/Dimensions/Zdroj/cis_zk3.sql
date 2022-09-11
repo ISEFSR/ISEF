@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[cis_zk3](
+	[Rok] [int] NOT NULL,
+	[Kod] [char](3) NOT NULL,
+	[Zk2] [char](2) NOT NULL,
+	[Nazov] [nvarchar](150) NOT NULL,
+	[Popis] [nvarchar](max) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Rok] ASC,
+	[Kod] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+	CONSTRAINT [FK_cis_zk3_zk2] FOREIGN KEY (Rok, Zk2) REFERENCES [dbo].[cis_zk2]([Rok], [Kod])
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
