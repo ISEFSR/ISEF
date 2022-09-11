@@ -265,6 +265,7 @@
                 default:
                     break;
             }
+            cnd.Wrap = true;
             return cnd;
         }
 
