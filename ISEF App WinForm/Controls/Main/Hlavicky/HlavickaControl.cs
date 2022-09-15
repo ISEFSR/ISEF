@@ -379,7 +379,7 @@
 
         private void buttonShowData_Click_1(object sender, EventArgs e)
         {
-
+            _hlavicka.ReloadData();
         }
 
         private async void buttonExport_Click_1(object sender, EventArgs e)

@@ -30,7 +30,7 @@
 
             var parsed = ParseExcelFile(filePath);
 
-//            Type = parsed.Type;
+            //Type = parsed.Type;
 
             DlhyNazov = parsed.DlhyNazov;
 
@@ -162,7 +162,7 @@
             var hlavicka = new Hlavicka
             {
                 Data = data,
-                //hlavicka.Type = type;
+                //Type = type;
                 Name = fileNameWithoutExtension,
                 HlavickaCondition = condition
             };
