@@ -1,6 +1,6 @@
 ﻿CREATE VIEW [dbo].vi_obce
 	AS 
-select			Rok,
+select			
 				org.*,
 				Fk.*,
 				Ek.*,
@@ -12,7 +12,7 @@ select			Rok,
 				Rozpp,
 				Rozpu
 from			dbo.mao o
-left join		dbo.vi_organizacie org on o.Ico = org.OrgIco
+left join		dbo.vi_organizacie org on o.Ico = org.OrgIco and o.Rok = org.Rok
 left join		dbo.vi_funkcna fk on o.Fk = fk.FKod5 and o.Rok = fk.FRok
 left join		dbo.vi_ekonomicka ek on o.Ek = ek.EKod6 and o.Rok = ek.ERok
 left join		dbo.vi_zdroj zk on o.Zk = zk.ZKod4 and o.Rok = zk.ZRok

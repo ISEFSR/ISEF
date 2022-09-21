@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[ostatne](
+CREATE TABLE [dbo].[ostatne] (
 	[Rok] [int] NOT NULL,
 	[Stupen] [char](1) NOT NULL,
 	[Ico] [char](8) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE [dbo].[ostatne](
 	foreign key (Rok, Ek) references dbo.cis_ek6 (Rok, Kod),
 	foreign key (Rok, Zk) references dbo.cis_zk4 (Rok, Kod),
 	foreign key (Rok, Pk) references dbo.cis_pk7 (Rok, Kod),
-	foreign key (Ico) references dbo.cis_org (Ico)
+	foreign key (Rok, Ico) references dbo.cis_org (Rok, Ico)
 	--foreign key (Ucet) references dbo.cis_ucet (Kod),
 ) ON [PRIMARY]
 GO
