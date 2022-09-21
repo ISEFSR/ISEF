@@ -243,7 +243,7 @@
 
         private static Condition GetConditionForType(HlavickaType type)
         {
-            var cnd = new Equals(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.Rok), "9999") { Negate = true };
+            var cnd = new NotEquals(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.Rok), "9999") { Wrap = true };
             switch (type)
             {
                 
