@@ -243,19 +243,21 @@
 
         private static Condition GetConditionForType(HlavickaType type)
         {
-            var cnd = new Equals(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.Rok), "9999") { Negate = true };
+            var cnd = new NotEquals(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.Rok), "9999") { Wrap = true };
             switch (type)
             {
                 
                 case HlavickaType.Prijmy:
-                    var CondotionEK1 = new Inlist("Ek1", AssuView.VratStlpec(AssuViewAvailableColumns.EKod1), new object[] { "1", "2", "3", "4", "5" });
+                    var ConditionEK1 = new Inlist("Ek1", AssuView.VratStlpec(AssuViewAvailableColumns.EKod1), new object[] { "1", "2", "3", "4", "5" });
                     var ConditionEk2 = new Inlist("Ek2", AssuView.VratStlpec(AssuViewAvailableColumns.EKod2), new object[] { "91", "92", "93" });
-                    CondotionEK1.AddCondition(ConditionEk2, ConditionOperator.Or);
-                    cnd.AddCondition(CondotionEK1, ConditionOperator.And);
+                    ConditionEK1.AddCondition(ConditionEk2, ConditionOperator.Or);
+                    ConditionEK1.Wrap = true;
+                    cnd.AddCondition(ConditionEK1, ConditionOperator.And);
                     break;
                 case HlavickaType.Vydavky:
                     var cndVydavky = new Inlist(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.EKod1), new object[] { "6", "7", "8", "9" });
                     cndVydavky.AddCondition(new Inlist(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.EKod2), new object[] { "91", "92", "93" }) { Negate = true }, ConditionOperator.And);
+                    cndVydavky.Wrap = true;
                     cnd.AddCondition(cndVydavky, ConditionOperator.And);
                     break;
                 case HlavickaType.Transfery:
