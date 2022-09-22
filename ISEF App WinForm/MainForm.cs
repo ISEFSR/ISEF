@@ -52,12 +52,12 @@
             await mainControl.Initialize();
         }
 
-        protected override void OnClosing(CancelEventArgs e)
+        protected override async void OnClosing(CancelEventArgs e)
         {
             base.OnClosing(e);
 
             // Ukoncenie cinnosti, ulozenie suborov 
-            mainControl.Quit().GetAwaiter().GetResult();
+            await mainControl.Quit();
         }
     }
 }
