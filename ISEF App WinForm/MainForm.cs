@@ -24,7 +24,7 @@
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers", 
                 System.Reflection.Assembly.GetEntryAssembly().Location, "HIGHDPIAWARE");
 
-            Properties.Settings.Default.ShouldInitialize = true;
+            //Properties.Settings.Default.ShouldInitialize = true;
 #if DEBUGRESET
             Properties.Settings.Default.ShouldInitialize = true; 
 #endif
