@@ -252,7 +252,7 @@
                     var ConditionEk2 = new Inlist("Ek2", AssuView.VratStlpec(AssuViewAvailableColumns.EKod2), new object[] { "91", "92", "93" });
                     ConditionEK1.AddCondition(ConditionEk2, ConditionOperator.Or);
                     ConditionEK1.Wrap = true;
-                    cnd.AddCondition(CondotionEK1, ConditionOperator.And);
+                    cnd.AddCondition(ConditionEK1, ConditionOperator.And);
                     break;
                 case HlavickaType.Vydavky:
                     var cndVydavky = new Inlist(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.EKod1), new object[] { "6", "7", "8", "9" });

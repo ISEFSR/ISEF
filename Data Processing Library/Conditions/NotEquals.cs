@@ -25,7 +25,7 @@ namespace cvti.data.Conditions
 
         public override Condition CloneMe(bool deep)
         {
-            var cnd = new Equals(ConditionName, Column, Value)
+            var cnd = new NotEquals(ConditionName, Column, Value)
             {
                 Negate = Negate
             };

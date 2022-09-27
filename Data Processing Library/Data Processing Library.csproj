@@ -92,6 +92,7 @@
     <Compile Include="Classifiers\ChybajuciRiadok.cs" />
     <Compile Include="Conditions\EmptyCondition.cs" />
     <Compile Include="Conditions\CompoundCondition.cs" />
+    <Compile Include="Conditions\NotEquals.cs" />
     <Compile Include="Conditions\PlainTextCondition.cs" />
     <Compile Include="Core\ConfigKey.cs" />
     <Compile Include="Classifiers\AnalytickaEvidenciaNovaHodnota.cs" />
