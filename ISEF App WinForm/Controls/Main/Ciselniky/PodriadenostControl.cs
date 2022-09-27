@@ -282,7 +282,7 @@ new Point(panelControlButtons.Width, 0));
 
         public string GetMoreInfo() => null;
 
-        void ICiselnikControl.Import()
+        async Task ICiselnikControl.Import()
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {

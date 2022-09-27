@@ -315,7 +315,7 @@ new Point(panelControlButtons.Width, 0));
             ZobrazOrganizacie();
         }
 
-        void ICiselnikControl.Import()
+        async Task ICiselnikControl.Import()
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
@@ -337,6 +337,8 @@ new Point(panelControlButtons.Width, 0));
                     if (exlwkco.Name == "data")
                     {
                         Dictionary<string, List<string>> dictco = LoadDataFromExcelco(exlwkco);
+
+                        await update(dictco, _manager.Organizacie);
                     }
                     else
                     {
@@ -374,6 +376,23 @@ new Point(panelControlButtons.Width, 0));
             }
 
             return ret;
+        }
+
+        private async Task update(Dictionary<string, List<string>> newData, IEnumerable<OrganizaciaRiadok> oldData)
+        {
+            foreach (var riadok in oldData)
+            {
+                if (newData.ContainsKey(riadok.Ico))
+                {
+                    riadok.KodSegment = newData[riadok.Ico][0];
+                    riadok.KodStupen = newData[riadok.Ico][1];
+                    riadok.KodPodriadenost = newData[riadok.Ico][2];
+                    riadok.KodObec = int.Parse(newData[riadok.Ico][3]);
+                    riadok.Nazov = newData[riadok.Ico][4];
+                    riadok.Ulica = newData[riadok.Ico][5];
+                }
+                await _manager.MSSQLManager.OrganizacieManager.UpdateOrganizacia(riadok);
+            }
         }
     }
 }

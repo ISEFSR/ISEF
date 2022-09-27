@@ -343,7 +343,7 @@
 
         public string GetMoreInfo() => Properties.Resources.MoreInfoFunkcna;
 
-        void ICiselnikControl.Import()
+        async Task ICiselnikControl.Import()
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
@@ -371,6 +371,11 @@
                         Dictionary<string, List<string>> dictFk3 = LoadDataFromExcelFk(exlwkFk3, 3, 2, 4, 5);
                         Dictionary<string, List<string>> dictFk4 = LoadDataFromExcelFk(exlwkFk4, 3, 2, 4, 5);
                         Dictionary<string, List<string>> dictFk5 = LoadDataFromExcelFk(exlwkFk5, 3, 2, 4, 5);
+
+                        await update(dictFk2, fk2.Select(e => e as AnalytickaEvidenciaRiadok).ToList());
+                        await update(dictFk3, fk3.Select(e => e as AnalytickaEvidenciaRiadok).ToList());
+                        await update(dictFk4, fk4.Select(e => e as AnalytickaEvidenciaRiadok).ToList());
+                        await update(dictFk5, fk5.Select(e => e as AnalytickaEvidenciaRiadok).ToList());
 
                     }
                     else
@@ -400,6 +405,19 @@
             }
 
             return ret;
+        }
+
+        private async Task update(Dictionary<string, List<string>> newData, List<AnalytickaEvidenciaRiadok> oldData)
+        {
+            foreach (var riadok in oldData)
+            {
+                if (newData.ContainsKey(riadok.Kod))
+                {
+                    riadok.Nazov = newData[riadok.Kod][1];
+                    riadok.Popis = newData[riadok.Kod][2];
+                }
+                await _manager.MSSQLManager.CiselnikyManager.UpdateCiselnikRiadokAsync(riadok);
+            }
         }
     }
 }

@@ -270,7 +270,7 @@
         private KrajRiadok VratVybranyKraj()
             => listBox1.SelectedItem as KrajRiadok;
 
-        void ICiselnikControl.Import()
+        async Task ICiselnikControl.Import()
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {

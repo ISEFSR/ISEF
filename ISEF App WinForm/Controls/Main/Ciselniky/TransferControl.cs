@@ -385,7 +385,7 @@
             }
         }
 
-        void ICiselnikControl.Import()
+        async Task ICiselnikControl.Import()
         {
             throw new NotImplementedException();
         }

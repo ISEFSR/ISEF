@@ -362,7 +362,7 @@
         private async void buttonNew_Click(object sender, EventArgs e)
             => await CreateItem();
 
-        void ICiselnikControl.Import()
+        async Task ICiselnikControl.Import()
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {

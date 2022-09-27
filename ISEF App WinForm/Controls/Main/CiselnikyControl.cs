@@ -367,9 +367,9 @@
             }
         }
 
-        private void toolStripButtonImport_Click(object sender, EventArgs e)
+        private async void toolStripButtonImport_Click(object sender, EventArgs e)
         {
-            _vybranyCiselnik.Import();
+           await _vybranyCiselnik.Import();
         }
 
         #endregion

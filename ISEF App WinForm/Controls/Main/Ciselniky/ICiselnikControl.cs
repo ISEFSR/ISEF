@@ -39,6 +39,6 @@ namespace cvti.isef.winformapp.Controls.Main.Ciselniky
 
         string GetInfoText();
         string GetMoreInfo();
-        void Import();
+        Task Import();
     }
 }
