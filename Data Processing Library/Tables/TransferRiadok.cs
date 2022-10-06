@@ -45,8 +45,10 @@
 
         public Condition GetCondition()
         {
-            return new Equals(string.Empty, AssuView.VratStlpec(Enums.AssuViewAvailableColumns.EKod6), Polozka).
+            var cnd = new Equals(string.Empty, AssuView.VratStlpec(Enums.AssuViewAvailableColumns.EKod6), Polozka).
                 AddCondition(new Equals(string.Empty, AssuView.VratStlpec(Enums.AssuViewAvailableColumns.StupenKod), FromStupen), Enums.ConditionOperator.And);
+            cnd.Wrap = true;
+            return cnd;
         }
 
         public SqlCommand GenerateInsertCommand(SqlConnection conn, string db)
