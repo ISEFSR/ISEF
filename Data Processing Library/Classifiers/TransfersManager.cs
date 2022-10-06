@@ -83,7 +83,7 @@
 
         public Condition GetWithCondition(IEnumerable<TransferRiadok> transfery)
         {
-            Condition transfers = new Equals(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.Rok), "9999") { Negate = true };
+            Condition transfers = new NotEquals(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.Rok), "9999");
             transfers.Wrap = true;
 
             var first = true;
