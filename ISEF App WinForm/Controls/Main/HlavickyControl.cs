@@ -324,6 +324,12 @@
             await ReloadHlavicky();
         }
 
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            foreach (var h in _hlavickyItems)
+                h.Key.ReloadData();
+        }
+
         private void buttonRoll_Click(object sender, EventArgs e)
         {
             if (_animating)
