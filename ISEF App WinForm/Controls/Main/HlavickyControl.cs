@@ -330,6 +330,11 @@
                 h.Key.ReloadData();
         }
 
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            DataManager.CoreFiles.Hlavicky.SaveData();
+        }
+
         private void buttonRoll_Click(object sender, EventArgs e)
         {
             if (_animating)

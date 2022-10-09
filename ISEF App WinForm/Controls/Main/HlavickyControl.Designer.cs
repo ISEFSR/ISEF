@@ -59,6 +59,8 @@
             this.panelHorizontalSeparator = new System.Windows.Forms.Panel();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripClassifiersSettings.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelHlavickaFilter.SuspendLayout();
@@ -79,7 +81,9 @@
             this.toolStripSeparator3,
             this.toolStripButtonReload,
             this.toolStripSeparator4,
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.toolStripSeparator6,
+            this.toolStripButton2});
             this.toolStripClassifiersSettings.Location = new System.Drawing.Point(0, 0);
             this.toolStripClassifiersSettings.Name = "toolStripClassifiersSettings";
             this.toolStripClassifiersSettings.Size = new System.Drawing.Size(1278, 43);
@@ -336,6 +340,20 @@
             this.toolStripButton1.ToolTipText = "Získa data pre všetky hlavičky odznova";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 43);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(91, 40);
+            this.toolStripButton2.Text = "Ulož do súboru";
+            this.toolStripButton2.ToolTipText = "Uloží dáta do JSON súboru";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
             // HlavickyControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -389,5 +407,7 @@
         private System.Windows.Forms.Panel panelHorizontalSeparator;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
     }
 }
