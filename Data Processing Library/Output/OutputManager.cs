@@ -320,7 +320,7 @@
                 if (_logo != null)
                 {
                     var picture = worksheet.Drawings.AddPicture(r, _logo);
-                    picture.SetSize(55, 55);
+                    picture.SetSize(89, 89);
                     picture.SetPosition(int.Parse(new String(r.Where(Char.IsDigit).ToArray())) -1, 5, 0, 5);
                 }
 
