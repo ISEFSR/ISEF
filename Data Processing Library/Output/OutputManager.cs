@@ -195,7 +195,7 @@
                     var dataWorksheet = package.Workbook.Worksheets[0];
 
                     // Odstranim 500 riadkov za prvym riadkom pod hlavickou
-                    dataWorksheet.Cells[$"A{zostava.Hlavicka.Data.RiadkyHlavicka + 1}:{zostava.Hlavicka.Data.PoslednyStlpec}42500"].Delete(eShiftTypeDelete.Up);
+                    dataWorksheet.Cells[$"A{zostava.Hlavicka.Data.RiadkyHlavicka + 1}:{zostava.Hlavicka.Data.PoslednyStlpec}{zostava.Hlavicka.Data.RiadkyStrana}"].Delete(eShiftTypeDelete.Up);
 
                     // sem ulozim rozsahy kde sa nachadzaju data, hlavicky, nadpisy a sumy
                     List<string> dataRanges = new List<string>(),
