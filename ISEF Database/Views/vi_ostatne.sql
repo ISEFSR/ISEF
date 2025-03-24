@@ -1,6 +1,5 @@
 ﻿CREATE VIEW vi_ostatne as
-select			Rok,
-				org.*,
+select			org.*,
 				fk.*,
 				ek.*,
 				zk.*,

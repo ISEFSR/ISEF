@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[cis_org]
 (
-	[Ico] char(8) primary key not null,
+	[Ico] char(8) not null unique,
 	[Rok] int not null primary key,
 	[KodSegment] char(2) not null foreign key references dbo.cis_segment (kod) default('99'),
 	[KodStupen] char(1) not null  default('n'),
@@ -9,5 +9,7 @@
 	[Nazov] nvarchar(250) null,
 	[Ulica] nvarchaR(250) null,
 	constraint [FK_Podriadenost] foreign key (Rok, KodPodriadenost) references dbo.cis_pod(Rok, Kod),
-	constraint [FK_Stupen] foreign key (Rok, KodStupen) references dbo.cis_stupen(Rok, Kod)
+	constraint [FK_Stupen] foreign key (Rok, KodStupen) references dbo.cis_stupen(Rok, Kod),
+	CONSTRAINT PK_cis_org unique (Rok, Ico)
+	
 )
