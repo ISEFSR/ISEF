@@ -1649,6 +1649,10 @@
       <Project>{1481da3f-7086-4b06-9262-81d9ee68b011}</Project>
       <Name>Data Processing Library</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ISEF Rozbory\ISEF Rozbory.csproj">
+      <Project>{3ba3a026-cdc3-4c7e-966d-9f55853eacce}</Project>
+      <Name>ISEF Rozbory</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
