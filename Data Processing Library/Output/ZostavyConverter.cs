@@ -345,7 +345,8 @@
         {
             // zmenil sa nadpis treba zosumovat
             var sumRow = new ZostavaDataRow(ZostavaRowType.Sum);
-            sumRow.AddColumn(new ZostavaDataColumn(rowIndex, 1, $"Spolu za {(string.IsNullOrEmpty(sumBy) ? "všetko" : sumBy)}"));
+
+            sumRow.AddColumn(new ZostavaDataColumn(rowIndex, 1, (string.IsNullOrEmpty(sumBy) ? "Celkovo" : "Spolu " + sumBy)));
 
             var columnIndex = zostava3 ? 3 : 2;
             foreach (var c in (from clmn in data.First().Columns where clmn.IsVisible && clmn.ContainsAggregateFunction() select clmn))
