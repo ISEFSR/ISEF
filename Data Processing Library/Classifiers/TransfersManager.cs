@@ -83,21 +83,20 @@
 
         public Condition GetWithCondition(IEnumerable<TransferRiadok> transfery)
         {
-            Condition transfers = new Equals(string.Empty, AssuView.VratStlpec(AssuViewAvailableColumns.Rok), "9999") { Negate = true };
-            transfers.Wrap = true;
-
-            var first = true;
+            Condition transferCondition = null;
             foreach (var t in transfery)
             {
-                if (first)
+                if (transferCondition is null) 
                 {
-                    transfers.AddCondition(t.GetCondition(), ConditionOperator.And);
-                    first = false;
+                    transferCondition = t.GetCondition(); 
+                    transferCondition.Wrap = true;
+                } 
+                else 
+                {
+                    transferCondition.AddCondition(t.GetCondition(), ConditionOperator.Or);
                 }
-                transfers.AddCondition(t.GetCondition(), ConditionOperator.Or);
             }
-
-            return transfers;
+            return transferCondition;
         }
 
         public Condition GetWithoutCondition(IEnumerable<TransferRiadok> transfery)
