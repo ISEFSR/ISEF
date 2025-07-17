@@ -347,6 +347,7 @@
             {
                 worksheet.Cells[r].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin);
                 worksheet.Cells[r].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
+                worksheet.Cells[r].Style.Numberformat.Format = "0";
             }
         }
 

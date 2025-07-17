@@ -122,7 +122,7 @@
             using (var conn = await Server.GetConnectionAsync(true))
             using (var cmd = zostava.GetSelectCommand(rok, condition, withoutInvisibleColumns).GenerateCommand())
             {
-                cmd.CommandTimeout = 240;
+                cmd.CommandTimeout = 1000;
                 cmd.Connection = conn;
                 using (var reader = await cmd.ExecuteReaderAsync())
                 {

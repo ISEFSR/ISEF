@@ -205,6 +205,7 @@
             this.zostavyControl.TabIndex = 0;
             this.zostavyControl.TitleImage = global::cvti.isef.winformapp.Properties.Resources.report_white_100;
             this.zostavyControl.TitleText = "ZOSTAVY";
+            this.zostavyControl.Load += new System.EventHandler(this.zostavyControl_Load);
             // 
             // tabPageData
             // 

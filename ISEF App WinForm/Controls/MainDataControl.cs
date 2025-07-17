@@ -290,5 +290,10 @@ namespace cvti.isef.winformapp.Controls
                 Application.Restart();
             }
         }
+
+        private void zostavyControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
