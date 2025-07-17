@@ -260,7 +260,7 @@
 
                     // Nastylovanie stlpcov v ktorych sa nachadzaju sumy
                     // tak aby nezobrazovali desatinne mieste a tak aby zonbrazovali oddelovac tisicov
-                    //dataWorksheet.Cells[$"B:{zostava.Hlavicka.Data.PoslednyStlpec}"].Style.Numberformat.Format = "#,##0";
+                    dataWorksheet.Cells[$"B:{zostava.Hlavicka.Data.PoslednyStlpec}"].Style.Numberformat.Format = "#,##0";
 
                     // Nastylovanie hlaviciek
                     // teda lepsie povedane nakopirovanie hlavicky z prveho riadku tam kam je treba
@@ -317,15 +317,15 @@
                     worksheet.Cells[r]);
 
                 // V pripade ak je aj logo pridam lgoo
-                if (_logo != null)
-                {
-                    var picture = worksheet.Drawings.AddPicture(r, _logo);
-                    picture.SetSize(89, 89);
-                    picture.SetPosition(int.Parse(new String(r.Where(Char.IsDigit).ToArray())) -1, 5, 0, 5);
-                }
+                //if (_logo != null)
+                //{
+                //    var picture = worksheet.Drawings.AddPicture(r, _logo);
+                //    picture.SetSize(89, 89);
+                //    picture.SetPosition(int.Parse(new String(r.Where(Char.IsDigit).ToArray())) - 1, 5, 0, 5);
+                //}
 
                 // nakoniec pridam oramovanie (bolo ako shape) 
-                worksheet.Cells[$"B{row + 1}:{zostava.Hlavicka.Data.PoslednyStlpec}{row + 1}"].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
+                //worksheet.Cells[$"B{row + 1}:{zostava.Hlavicka.Data.PoslednyStlpec}{row + 1}"].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
             }
         }
 
@@ -335,6 +335,7 @@
             {
                 worksheet.Cells[r].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin);
                 worksheet.Cells[r].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
+                worksheet.Cells[r].Style.Numberformat.Format = "0";
             }
         }
 

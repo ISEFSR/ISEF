@@ -44,8 +44,8 @@
         /// </summary>
         public int NesumStlpce { get; set; }
 
-        public string LeftTitleRange { get => "A6:A6"; }
-        public string RightTitleRange { get => $"{GetColumn(StlpceHlavicka - 2)}2:{GetColumn(StlpceHlavicka - 2)}2"; }
+        public string LeftTitleRange { get => "A3:A3"; }
+        public string RightTitleRange { get => $"{GetColumn(StlpceHlavicka - 2)}1:{GetColumn(StlpceHlavicka - 2)}1"; }
 
         public char PoslednyStlpec { get => GetColumn(StlpceHlavicka); }
 

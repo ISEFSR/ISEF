@@ -45,9 +45,10 @@
             {
                 using (var pckg = new ExcelPackage(file))
                 {
+                    var wb = pckg.Workbook;
                     foreach (var w in worksheets)
                     {
-                        ExtractDataFromWorksheet(pckg.Workbook.Worksheets[w], data, column, row, headerRow, zdrojVpredu);
+                        ExtractDataFromWorksheet(wb.Worksheets[w], data, column, row, headerRow, zdrojVpredu);
                     }
                 }
 

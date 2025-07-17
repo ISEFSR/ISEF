@@ -193,7 +193,7 @@
                 var dataWorksheet = package.Workbook.Worksheets[0];
 
                 // get first data row 
-                var row = hlavicka.Data.RiadkyHlavicka + 1;
+                var row = hlavicka.Data.RiadkyHlavicka +1;
 
                 // remove all rows after first data row
                 dataWorksheet.Cells[$"A{row}:X100"].Delete(eShiftTypeDelete.Up);
