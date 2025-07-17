@@ -76,7 +76,7 @@
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(318, 13);
             this.labelName.TabIndex = 1;
-            this.labelName.Text = "Výdavky MSVVaS podľa okruhov a rozpočtových organizácií";
+            this.labelName.Text = "Výdavky MŠVVaM podľa okruhov a rozpočtových organizácií";
             // 
             // labelType
             // 
