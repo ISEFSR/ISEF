@@ -20,7 +20,7 @@
         {
             return new OkruhZostavy[]
             {
-                new OkruhZostavy("MŠVVaŠ SR", new string[]{ "u", "2", "r", "a" }),
+                new OkruhZostavy("MŠVVaM SR", new string[]{ "u", "2", "r", "a" }),
                 new OkruhZostavy("MV SR", new string[]{ "v", "s" }),
                 new OkruhZostavy("Mestá a obce", new string[]{ "o" }),
                 new OkruhZostavy("Vyššie územné celky", new string[]{ "9" }),

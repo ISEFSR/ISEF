@@ -169,6 +169,10 @@
                 // Nazov vystupnej XLSX zostavy a
                 // Cesta k vystupnemu XLSX suboru
                 var zostavaOutputFileName = $"z{zostava.Okruh}{zostava.Hlavicka.Name}.xlsx";
+                if (zostava.Hlavicka.Name == "hlpgalloro")
+                {
+                    var a = "fsgsd";
+                }
                 var finalPath = Path.Combine(finalDirectory, zostavaOutputFileName);
 
                 // Ziskam raw data pre zostavu 
@@ -195,7 +199,7 @@
                     var dataWorksheet = package.Workbook.Worksheets[0];
 
                     // Odstranim 500 riadkov za prvym riadkom pod hlavickou
-                    dataWorksheet.Cells[$"A{zostava.Hlavicka.Data.RiadkyHlavicka + 1}:{zostava.Hlavicka.Data.PoslednyStlpec}{zostava.Hlavicka.Data.RiadkyStrana}"].Delete(eShiftTypeDelete.Up);
+                    dataWorksheet.Cells[$"A{zostava.Hlavicka.Data.RiadkyHlavicka + 1}:{zostava.Hlavicka.Data.PoslednyStlpec}42500"].Delete(eShiftTypeDelete.Up);
 
                     // sem ulozim rozsahy kde sa nachadzaju data, hlavicky, nadpisy a sumy
                     List<string> dataRanges = new List<string>(),
@@ -225,7 +229,7 @@
                                 sumRanges.Add($"A{r.RowIndex}:{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex}");
                                 if (!string.IsNullOrEmpty(dataRange))
                                 {
-                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex-1}";
+                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex - 1}";
                                     dataRanges.Add(dataRange);
                                     dataRange = string.Empty;
                                 }
@@ -234,7 +238,7 @@
                                 titleRanges.Add($"A{r.RowIndex}:{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex}");
                                 if (!string.IsNullOrEmpty(dataRange))
                                 {
-                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex-1}";
+                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex - 1}";
                                     dataRanges.Add(dataRange);
                                     dataRange = string.Empty;
                                 }
@@ -243,7 +247,7 @@
                                 headerRanges.Add($"A{r.RowIndex}");
                                 if (!string.IsNullOrEmpty(dataRange))
                                 {
-                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex-1}";
+                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex - 1}";
                                     dataRanges.Add(dataRange);
                                     dataRange = string.Empty;
                                 }
@@ -257,6 +261,14 @@
                     // TODO: zatial sa replacuje len text '{rok}' do buducna sa to kludne moze rozisirt
                     dataWorksheet.Cells[zostava.Hlavicka.Data.LeftTitleRange].Value = zostava.LeftTitle.Replace("{rok}", rok.ToString());
                     dataWorksheet.Cells[zostava.Hlavicka.Data.RightTitleRange].Value = zostava.RightTitle.Replace("{rok}", rok.ToString());
+
+
+                    if (_logo != null)
+                    {
+                        var picture = dataWorksheet.Drawings.AddPicture("A1", _logo);
+                        picture.SetSize(55, 55);
+                        picture.SetPosition(0, 5, 0, 5);
+                    }
 
                     // Nastylovanie stlpcov v ktorych sa nachadzaju sumy
                     // tak aby nezobrazovali desatinne mieste a tak aby zonbrazovali oddelovac tisicov
@@ -316,15 +328,15 @@
                 worksheet.Cells[$"A1:{zostava.Hlavicka.Data.PoslednyStlpec}{zostava.Hlavicka.Data.RiadkyHlavicka}"].Copy(
                     worksheet.Cells[r]);
 
-                // V pripade ak je aj logo pridam lgoo
-                //if (_logo != null)
-                //{
-                //    var picture = worksheet.Drawings.AddPicture(r, _logo);
-                //    picture.SetSize(89, 89);
-                //    picture.SetPosition(int.Parse(new String(r.Where(Char.IsDigit).ToArray())) - 1, 5, 0, 5);
-                //}
+                //// V pripade ak je aj logo pridam lgoo
+                if (_logo != null)
+                {
+                    var picture = worksheet.Drawings.AddPicture(r, _logo);
+                    picture.SetSize(55, 55);
+                    picture.SetPosition(int.Parse(new String(r.Where(Char.IsDigit).ToArray())) -1, 5, 0, 5);
+                }
 
-                // nakoniec pridam oramovanie (bolo ako shape) 
+                //// nakoniec pridam oramovanie (bolo ako shape) 
                 //worksheet.Cells[$"B{row + 1}:{zostava.Hlavicka.Data.PoslednyStlpec}{row + 1}"].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
             }
         }

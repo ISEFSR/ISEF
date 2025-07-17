@@ -2,7 +2,7 @@
 {
     public enum OkruhZostavyEnum
     {
-        MSVVaS,
+        MŠVVaM,
         MV,
         MaO,
         VUC,
