@@ -229,7 +229,7 @@
                                 sumRanges.Add($"A{r.RowIndex}:{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex}");
                                 if (!string.IsNullOrEmpty(dataRange))
                                 {
-                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex-1}";
+                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex - 1}";
                                     dataRanges.Add(dataRange);
                                     dataRange = string.Empty;
                                 }
@@ -238,7 +238,7 @@
                                 titleRanges.Add($"A{r.RowIndex}:{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex}");
                                 if (!string.IsNullOrEmpty(dataRange))
                                 {
-                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex-1}";
+                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex - 1}";
                                     dataRanges.Add(dataRange);
                                     dataRange = string.Empty;
                                 }
@@ -247,7 +247,7 @@
                                 headerRanges.Add($"A{r.RowIndex}");
                                 if (!string.IsNullOrEmpty(dataRange))
                                 {
-                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex-1}";
+                                    dataRange += $"{zostava.Hlavicka.Data.PoslednyStlpec}{r.RowIndex - 1}";
                                     dataRanges.Add(dataRange);
                                     dataRange = string.Empty;
                                 }
@@ -261,6 +261,14 @@
                     // TODO: zatial sa replacuje len text '{rok}' do buducna sa to kludne moze rozisirt
                     dataWorksheet.Cells[zostava.Hlavicka.Data.LeftTitleRange].Value = zostava.LeftTitle.Replace("{rok}", rok.ToString());
                     dataWorksheet.Cells[zostava.Hlavicka.Data.RightTitleRange].Value = zostava.RightTitle.Replace("{rok}", rok.ToString());
+
+
+                    if (_logo != null)
+                    {
+                        var picture = dataWorksheet.Drawings.AddPicture("A1", _logo);
+                        picture.SetSize(55, 55);
+                        picture.SetPosition(0, 5, 0, 5);
+                    }
 
                     // Nastylovanie stlpcov v ktorych sa nachadzaju sumy
                     // tak aby nezobrazovali desatinne mieste a tak aby zonbrazovali oddelovac tisicov
@@ -321,12 +329,12 @@
                     worksheet.Cells[r]);
 
                 //// V pripade ak je aj logo pridam lgoo
-                //if (_logo != null)
-                //{
-                //    var picture = worksheet.Drawings.AddPicture(r, _logo);
-                //    picture.SetSize(55, 55);
-                //    picture.SetPosition(int.Parse(new String(r.Where(Char.IsDigit).ToArray())) -1, 5, 0, 5);
-                //}
+                if (_logo != null)
+                {
+                    var picture = worksheet.Drawings.AddPicture(r, _logo);
+                    picture.SetSize(55, 55);
+                    picture.SetPosition(int.Parse(new String(r.Where(Char.IsDigit).ToArray())) -1, 5, 0, 5);
+                }
 
                 //// nakoniec pridam oramovanie (bolo ako shape) 
                 //worksheet.Cells[$"B{row + 1}:{zostava.Hlavicka.Data.PoslednyStlpec}{row + 1}"].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
