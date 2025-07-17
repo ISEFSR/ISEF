@@ -100,7 +100,7 @@
             {
                 switch (o)
                 {
-                    case OkruhZostavyEnum.MSVVaS:
+                    case OkruhZostavyEnum.MŠVVaM:
                     case OkruhZostavyEnum.MV:
                     case OkruhZostavyEnum.MaO:
                     case OkruhZostavyEnum.VUC:

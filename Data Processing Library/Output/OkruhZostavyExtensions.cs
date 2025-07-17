@@ -20,8 +20,8 @@
 
             switch (okruh)
             {
-                case OkruhZostavyEnum.MSVVaS:
-                    return "Rozpis MŠVVaŠ";
+                case OkruhZostavyEnum.MŠVVaM:
+                    return "Rozpis MŠVVaM";
                 case OkruhZostavyEnum.MV:
                     return "Rozpis ministerstva vnútra";
                 case OkruhZostavyEnum.MaO:
