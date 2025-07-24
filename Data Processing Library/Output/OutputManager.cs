@@ -169,10 +169,7 @@
                 // Nazov vystupnej XLSX zostavy a
                 // Cesta k vystupnemu XLSX suboru
                 var zostavaOutputFileName = $"z{zostava.Okruh}{zostava.Hlavicka.Name}.xlsx";
-                if (zostava.Hlavicka.Name == "hlpgalloro")
-                {
-                    var a = "fsgsd";
-                }
+               
                 var finalPath = Path.Combine(finalDirectory, zostavaOutputFileName);
 
                 // Ziskam raw data pre zostavu 
@@ -259,7 +256,7 @@
 
                     // Doplnenie nadpisov do hlavicky na provom riadku
                     // TODO: zatial sa replacuje len text '{rok}' do buducna sa to kludne moze rozisirt
-                    dataWorksheet.Cells[zostava.Hlavicka.Data.LeftTitleRange].Value = zostava.LeftTitle.Replace("{rok}", rok.ToString());
+                    dataWorksheet.Cells[zostava.Hlavicka.Data.LeftTitleRange].Value = dataWorksheet.Cells[zostava.Hlavicka.Data.LeftTitleRange].Value.ToString().Replace("xxxx", rok.ToString());
                     dataWorksheet.Cells[zostava.Hlavicka.Data.RightTitleRange].Value = zostava.RightTitle.Replace("{rok}", rok.ToString());
 
 
