@@ -210,9 +210,10 @@
                     foreach (var r in convertedData)
                     {
                         // Importujem hodnoty pre riadok
-                        foreach (var c in r.Columns)
+                        foreach (var c in r.Columns) {
                             dataWorksheet.Cells[c.RowIndex, c.ColumnIndex].Value = c.Value;
-
+                            
+                        }
                         // Na zaklade typu riadku pridam do rozsah do spracovacej tabulky
                         switch (r.RowType)
                         {
@@ -344,7 +345,7 @@
             {
                 worksheet.Cells[r].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin);
                 worksheet.Cells[r].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                worksheet.Cells[r].Style.Numberformat.Format = "0";
+                worksheet.Cells[r].Style.Numberformat.Format = "#,##0";
             }
         }
 
@@ -354,6 +355,7 @@
             {
                 worksheet.Cells[r].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin);
                 worksheet.Cells[r].Style.Font.Bold = true;
+                worksheet.Cells[r].Style.Numberformat.Format = "#,##0";
             }
         }
 
