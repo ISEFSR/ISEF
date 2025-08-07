@@ -1,6 +1,6 @@
 ﻿CREATE VIEW [dbo].[vi_organizacie]
 	AS SELECT		
-					co.Rok as Rok,
+					--co.Rok as Rok,
 
 					sgm.Kod as SegmentKod,
 					sgm.SkratenyText as SegmentShort,
